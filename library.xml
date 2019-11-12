@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--- Llenguatge de marques
+Tasca 2.2 Creació d'un fitxer XML pel projecte VLC
+Daniel Arqués Toro, Daniel Jonathan Zurita Mena
+-->
+<!--- Aquest arxiu està validat amb www.xmlvalidation.com, a diferència de l'altre que contenia dues errades-->
+<library xml:lang="ca">
+    <tracks>
+        <track id="190029"> <!-- L'id està format per l'id de l'àlbum de la cançó seguit del número de cançó dins l'àlbum -->
+            <name>
+                A veure què en fem
+            </name>
+            <genre id="15">
+                Indie-pop
+            </genre>
+            <album id="19002">
+                <title>
+                    Atletes, baixin de l'escenari
+                </title>
+                <number>
+                    9
+                </number>
+                <artists>
+                    <band id="CAT102">
+                        Manel           <!--- Nom de la banda, si es que la cançó pertany a un grup. Aquesta etiqueta conté els artistes que componen el grup -->
+                        <artist id="CAT123">
+                            <composer/>  <!--- Aquesta etiqueta indica que aquest artista és el compositor de la cançó, si algun compositor no pertany al grup,
+                                                aniria a la mateixa altura que les etiquetes <artist> -->
+                            <name>Guillem Gisbert Puig</name>
+                        </artist>
+                        <artist id="CAT219">
+                            <name>Martí Maymó Tomàs</name>
+                        </artist>
+                        <artist id="CAT432">
+                            <name>Roger Padilla Gutiérrez</name>
+                        </artist>
+                        <artist id="CAT541">
+                            <name>Arnau Vallvé Socies</name>
+                        </artist>
+                    </band>
+                </artists>
+                <year>
+                    2013
+                </year>
+            </album>
+            <duration>
+                4:57
+            </duration>
+            <size type="bytes">
+                3287401
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="431202" xml:lang="en">
+            <name>
+                Cold as Ice
+            </name>
+            <genre id="1">
+                Rock
+            </genre>
+            <album id="43120">
+                <title>
+                    Foreigner
+                </title>
+                <number>
+                    2
+                </number>
+                <artists>
+                    <band id="US832091">
+                        Foreigner
+                        <artist id="US44349">
+                            <composer/>
+                            <name>Lou Gramm</name>
+                        </artist>
+                        <artist id="EN28921">
+                            <composer/>
+                            <name>Mick Jones</name>
+                        </artist>
+                        <artist id="EN8973">
+                            <name>Ian McDonald</name>
+                        </artist>
+                        <artist id="US2481240">
+                            <name>Al Greenwood</name>
+                        </artist>
+                        <artist id="US2314553">
+                            <name>Ed Gagliardi</name>
+                        </artist>
+                        <artist id="EN21245">
+                            <name>Dennis Elliott</name>
+                        </artist>
+                    </band>
+                </artists>
+                <year>
+                    1977
+                </year>
+            </album>
+            <duration>
+                3:19
+            </duration>
+            <size type="bytes">
+                3321379
+            </size>
+            <media_type id="4">
+                mp4
+            </media_type>
+        </track>
+        <track id="11255567" xml:lang="en">
+            <name>
+                Zero
+            </name>
+            <genre id="12">
+                Pop rock
+            </genre>
+            <album id="1125556">
+                <title>
+                    Origins
+                </title>
+                <number>
+                    7
+                </number>
+                <artists>
+                    <band id="US92113442">
+                        Imagine dragons
+                        <artist id="US9844239">
+                            <composer/>
+                            <name>Dan Reynolds</name>
+                        </artist>
+                        <artist id="US9924780">
+                            <composer/>
+                            <name>Wayne Sermon</name>
+                        </artist>
+                        <artist id="US10233120">
+                            <name>Ben McKee</name>
+                        </artist>
+                        <artist id="US24432101">
+                            <name>Daniel Platzman</name>
+                        </artist>
+                    </band>
+                    <composer id="US90034511">
+                        <name>John Hill</name>
+                    </composer>
+                </artists>
+                <year>
+                    2018
+                </year>
+            </album>
+            <duration>
+                3:30
+            </duration>
+            <size type="bytes">
+                5320000
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="938421" xml:lang="es">
+            <name>
+                No dudaría
+            </name>
+            <genre id="39">
+                Flamenco
+            </genre>
+            <album id="93842">
+                <title>
+                    Antonio
+                </title>
+                <number>
+                    1
+                </number>
+                <artists>
+                    <artist id="ES7521">
+                        <composer/>
+                        <name>Antonio Flores</name>
+                    </artist>
+                </artists>
+                <year>
+                    1980
+                </year>
+            </album>
+            <duration>
+                3:32
+            </duration>
+            <size type="bytes">
+                2503295
+            </size>
+            <media_type id="3">
+                wmv
+            </media_type>
+        </track>
+    </tracks>
+    <playlists>
+        <playlist id='1'>
+            <name>
+                Música variada
+            </name>
+            <playlistTracks>
+                <playlistTrack>
+                    <id>938421</id> <!-- Referencia a l'atribut de l'etiqueta track id dins tracks -->
+                    <number>1</number>
+                </playlistTrack>
+                <playlistTrack>
+                    <id>190029</id>
+                    <number>2</number>
+                </playlistTrack>
+                <playlistTrack>
+                    <id>431202</id>
+                    <number>3</number>
+                </playlistTrack>
+                <playlistTrack>
+                    <id>1125556</id>
+                    <number>4</number>
+                </playlistTrack>
+            </playlistTracks>
+        </playlist>
+    </playlists>
+</library>

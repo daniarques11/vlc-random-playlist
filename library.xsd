@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Llenguatge de marques
+Tasca 3.1 Creació d'un fitxer XSD pel projecte VLC
+Daniel Arqués Toro, Daniel Jonathan Zurita Mena
+XML verificado por: https://www.xmlvalidation.com y 
+XSD Generado por: https://xml.mherman.org/ -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
+  <xs:element name="library">
+    <xs:complexType>
+    <!-- ComplexType ya que contiene todos las ramas referentes a las dos
+    principales (Tracks y Playlist) -->
+      <xs:sequence>
+        <xs:element ref="tracks"/>
+        <xs:element ref="playlists"/>
+      </xs:sequence>
+      <xs:attribute ref="xml:lang" use="required"/>
+      <!-- Atributo que contiene las siglas del idioma para dejarlo reflejado 
+      con el que se trabaja en todo el XML. Es requerida y no se define si son
+      números o letras. -->
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tracks">
+    <xs:complexType>
+    <!-- ComplexType ya que contiene más hijos dentro (Tracks) diferenciados
+    por una ID -->
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="track"/>
+        <!-- "unbounded" ya que no definimos la cantidad máxima de tracks
+        que puede haber dentro de Tracks -->
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="track">
+    <xs:complexType>
+    <!-- ComplexType ya que contiene más hijos dentro (name, genre, album, 
+    duration, size y media_type) -->
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="genre"/>
+        <xs:element ref="album"/>
+        <xs:element ref="duration"/>
+        <xs:element ref="size"/>
+        <xs:element ref="media_type"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+      <!-- Atributo ID para diferenciar los diferentes tacks. 
+      Es requerida y tienen que ser números -->
+      <xs:attribute ref="xml:lang"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="genre">
+    <xs:complexType mixed="true">
+    <!-- Complemento "mixed=true" ya que genres puede tener elementos 
+    como el nombre del genero y atributos (ID)-->
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+      <!-- Atributo ID para diferenciar los diferentes generos. 
+      Es requerida y tienen que ser números -->
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="album">
+    <xs:complexType>
+    <!-- ComplexType ya que contiene más hijos dentro (title, number, artists
+    y year) -->
+      <xs:sequence>
+        <xs:element ref="title"/>
+        <xs:element ref="number"/>
+        <xs:element ref="artists"/>
+        <xs:element ref="year"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+      <!-- Atributo ID para diferenciar los diferentes albums del track. 
+      Es requerida y tienen que ser números -->
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="title" type="xs:string"/>
+  <xs:element name="artists">
+    <xs:complexType>
+    <!-- ComplexType ya que la banda puede contener un artista o una banda -->
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="band"/>
+        <xs:choice minOccurs="0">
+        <!-- Choice ya que la canción puede estar hecha por un integrante de
+        la banda o externo, en caso de ser así se añadiría, sino se deja vacio;
+        dando a entender que los compositores son los artistas de la banda -->
+          <xs:element ref="artist"/>
+          <xs:element ref="composer"/>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="band">
+    <xs:complexType mixed="true">
+     <!-- ComplexType ya que la banda puede contener varios artistas y "mixed" 
+     porque el nombre de la misma no se enctra dentro de ningún otro elemento -->
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="artist"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:NCName"/>
+      <!-- Atributo ID para diferenciar los diferentes albums del track. 
+      Es requerida y "NCName" indica que puede puede contener caracteres
+      menos los ":" que estan prohibidos-->
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="year" type="xs:integer"/>
+  <!-- Se cambia el atributo Type de "string" a "integer" ya que solo se quiere
+  reflejar el año y nada más -->
+  <xs:element name="duration" type="xs:string"/>
+  <xs:element name="size">
+    <xs:complexType mixed="true">
+    <!-- ComplexType ya que el tamaño puede tener más elementos en el futuro
+     y "mixed" porque el valor de la misma no se enctra dentro de ningún otro 
+     elemento -->
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+      <!-- Atributo Type para diferenciar los diferentes typos de almacenamiento. 
+      Es requerida y "NCName" indica que puede puede contener caracteres
+      menos los ":" que estan prohibidos-->
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="media_type">
+    <xs:complexType mixed="true">
+    <!-- ComplexType ya que la extensión del archivo puede tener más elementos 
+    en el futuro y "mixed" porque el valor de la misma no se enctra dentro de 
+    ningún otro elemento -->
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+      <!-- Atributo ID para diferenciar las diferentes extensiones que puede
+      tener el archivo. Es requerida y tiene que contener numeros-->
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="playlists">
+    <xs:complexType>
+    <!-- ComplexType ya que puede haber más de una playlist aunque en nuestro
+    caso solo hayamos puesto una como ejemplo. -->
+      <xs:sequence>
+        <xs:element ref="playlist"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="playlist">
+    <xs:complexType>
+    <!-- ComplexType ya que cada playlist tiene más de un elemento 
+    (name y playlistTracks) -->
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="playlistTracks"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+      <!-- Atributo ID para diferenciar las diferentes playlist que puede haber.
+       Es requerida y tiene que contener numeros-->
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="playlistTracks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="playlistTrack"/>
+        <!-- "unbounded" ya que no definimos la cantidad máxima de playlistTrack
+        que puede haber dentro de playlistTracks -->
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="playlistTrack">
+    <xs:complexType>
+    <!-- ComplexType ya que cada playlist tiene más de un elemento 
+    (id y number) -->
+      <xs:sequence>
+        <xs:element ref="id"/>
+        <xs:element ref="number"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+    <!-- Las referencias que recibe con el ID (id , name, number y artist) -->
+  <xs:element name="id" type="xs:integer"/>
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="number" type="xs:integer"/>
+  <xs:element name="artist">
+    <xs:complexType>
+    <!-- ComplexType ya que puede tener más elementos en el futuro -->
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="composer"/>
+        <!-- Se define el minimo de ocurrencias del compositor (0) -->
+        <xs:element ref="name"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:NCName"/>
+      <!-- Atributo ID para diferenciar los diferentes artistas. 
+      Es requerida y "NCName" indica que puede puede contener caracteres
+      menos los ":" que estan prohibidos-->
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="composer">
+    <xs:complexType>
+    <!-- ComplexType ya que puede tener más elemento en el futuro -->
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="name"/>
+        <!-- Se define el minimo de ocurrencias del nombre del compositor (0)
+        y hace referencia al nombre del artista  -->
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:NCName"/>
+      <!-- Atributo ID para diferenciar los diferentes compositores. 
+      No es requerida y "NCName" indica que puede puede contener 
+      caracteres menos los ":" que estan prohibidos-->
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
