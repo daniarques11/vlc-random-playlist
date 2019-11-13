@@ -1,7 +1,7 @@
 @echo off
 cls
-IF EXIST "C:\Program Files\VideoLAN\VLC\vlc.exe" (set rutavlc="C:\Program Files\VideoLAN\VLC\vlc.exe") ELSE (ECHO No encontrado)
-IF EXIST "C:\Program Files (x86)\VideoLAN\VLC\vlc.exe" (set rutavlc="C:\Program Files (x86)\VideoLAN\VLC\vlc.exe") ELSE (ECHO No encontrado en x86)
+IF EXIST "C:\Program Files\VideoLAN\VLC\vlc.exe" (set comandovlc="C:\Program Files\VideoLAN\VLC\vlc") ELSE (ECHO No encontrado)
+IF EXIST "C:\Program Files (x86)\VideoLAN\VLC\vlc.exe" (set comandovlc="C:\Program Files (x86)\VideoLAN\VLC\vlc") ELSE (ECHO No encontrado en x86)
 echo %rutavlc%
 
 :menu
@@ -51,7 +51,7 @@ cls
 goto :v%opcionv%
 
 :3
-echo Estas con las opciones de audio:
+echo Estas con las opciones de webcam:
 echo.
 echo -1: Activar webcam
 echo.
@@ -68,7 +68,8 @@ exit
 
 
 :m1
-
+%comandovlc% .\Musica --random
+goto :1
 
 :m2
 
