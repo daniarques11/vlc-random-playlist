@@ -5,7 +5,7 @@ import barricadas
 def cancionesRandom(diccionarioCanciones):
     try:
         assert isinstance(diccionarioCanciones, dict) == True
-
+        #Assert para comprobar si la entrada es un diccionario
     except AssertionError:
         return "La entrada no es un diccionario"
     else:
