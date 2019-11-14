@@ -8,15 +8,16 @@ def cancionesRandom(diccionarioCanciones):
     except AssertionError:
         return "La entrada no es un diccionario"
     else:
-        dictNumerado = getDictNumerado(diccionarioCanciones)
-        desordenarCanciones(dictNumerado)
+        listaCanciones = getListaCanciones(diccionarioCanciones)
+#        desordenarCanciones(dictNumerado)
+        return listaCanciones
 
 
-def getDictNumerado(diccionarioCanciones):
-    tracksNumerados = {}
-    for index, cancion in enumerate(diccionarioCanciones):
-        tracksNumerados[index] = cancion
-    return tracksNumerados
+def getListaCanciones(diccionarioCanciones):
+    listaCanciones = []
+    for key in diccionarioCanciones:
+        listaCanciones.append(key)
+    return listaCanciones
 
 
 print(cancionesRandom({'13472392':
