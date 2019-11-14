@@ -1,5 +1,5 @@
 def barricada(output, input):
-    return checkLongitudEsIgual(output, input) and checkListaRandom(output, input) and checkIntegridad(output, input)
+    return checkLongitudEsIgual(output, input) and checkRepeticion(output, input) and checkIntegridad(output, input)
 
 
 def checkLongitudEsIgual(output, input):
@@ -9,7 +9,7 @@ def checkLongitudEsIgual(output, input):
         return True
 
 
-def checkListaRandom(output, input):
+def checkRepeticion(output, input):
     for cancion in output:
         if output.count(cancion) != input.count(cancion):
             return False
