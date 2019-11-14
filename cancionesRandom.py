@@ -1,4 +1,5 @@
 import random
+import barricadas
 
 
 def cancionesRandom(diccionarioCanciones):
@@ -10,7 +11,10 @@ def cancionesRandom(diccionarioCanciones):
     else:
         listaCanciones = getListaCanciones(diccionarioCanciones)
         listaDesordenada = desordenarCanciones(listaCanciones)
-        return listaDesordenada
+        if barricadas.barricada(listaDesordenada, listaCanciones) == True:
+            return listaDesordenada
+        else: 
+            return "Algo ha ido mal"
 
 
 def getListaCanciones(diccionarioCanciones):
