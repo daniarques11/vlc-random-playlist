@@ -9,8 +9,8 @@ def cancionesRandom(diccionarioCanciones):
         return "La entrada no es un diccionario"
     else:
         listaCanciones = getListaCanciones(diccionarioCanciones)
-#        desordenarCanciones(dictNumerado)
-        return listaCanciones
+        listaDesordenada = desordenarCanciones(listaCanciones)
+        return listaDesordenada
 
 
 def getListaCanciones(diccionarioCanciones):
@@ -18,6 +18,17 @@ def getListaCanciones(diccionarioCanciones):
     for key in diccionarioCanciones:
         listaCanciones.append(key)
     return listaCanciones
+
+
+def desordenarCanciones(listaCanciones):
+    listaCopia = listaCanciones[:]
+    assert listaCopia is not listaCanciones
+    listaDesordenada = []
+    while listaCopia != []:
+        numeroRandom = random.randint(0, len(listaCopia) - 1)
+        # quitar un elemento de lista y meterlo al final de listaDesordenada
+        listaDesordenada.append(listaCopia.pop(numeroRandom))
+    return listaDesordenada
 
 
 print(cancionesRandom({'13472392':
