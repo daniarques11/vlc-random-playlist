@@ -13,7 +13,7 @@ def cancionesRandom(diccionarioCanciones):
         listaDesordenada = desordenarCanciones(listaCanciones)
         if barricadas.barricada(listaDesordenada, listaCanciones) == True:
             return listaDesordenada
-        else: 
+        else:
             return "Algo ha ido mal"
 
 
