@@ -84,7 +84,8 @@ goto :menu
 
 
 :v1
-
+set opcionesvlc=-f %opcionesvlc%
+echo %opcionesvlc
 
 :v2
 
