@@ -1,10 +1,10 @@
 [
-  "test_barricadas.py::test_correctLists",
-  "test_barricadas.py::test_incorrectLists",
-  "test_barricadas.py::test_correctLenList",
-  "test_barricadas.py::test_incorrectLenList",
-  "test_barricadas.py::test_correctRepInt",
-  "test_barricadas.py::test_incorrectRepInt",
-  "test_barricadas.py::test_correctIntegInt",
-  "test_barricadas.py::test_incorrectIntegInt"
+  "test_barricadas.py::test_barricadaListasCorrectas",
+  "test_barricadas.py::test_barricadaListasIncorrectas",
+  "test_barricadas.py::test_mismaLongitudListas",
+  "test_barricadas.py::test_diferenteLongitudListas",
+  "test_barricadas.py::test_countCancionesOutputEsIgualInput",
+  "test_barricadas.py::test_countCancionesOutputEsDiferenteInput",
+  "test_barricadas.py::test_integridadCorrecto",
+  "test_barricadas.py::test_integridadIncorrecto"
 ]
