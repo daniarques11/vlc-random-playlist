@@ -3,6 +3,7 @@ cls
 IF EXIST "C:\Program Files\VideoLAN\VLC\vlc.exe" (set comandovlc="C:\Program Files\VideoLAN\VLC\vlc") ELSE (ECHO No encontrado)
 IF EXIST "C:\Program Files (x86)\VideoLAN\VLC\vlc.exe" (set comandovlc="C:\Program Files (x86)\VideoLAN\VLC\vlc") ELSE (ECHO No encontrado en x86)
 echo %rutavlc%
+set opcionesvlc = 
 
 :menu
 echo.
@@ -68,7 +69,8 @@ exit
 
 
 :m1
-%comandovlc% .\Musica --random
+set opcionesvlc=%opcionesvlc%--random 
+echo %opcionesvlc%
 goto :1
 
 :m2
