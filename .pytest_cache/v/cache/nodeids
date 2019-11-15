@@ -1,0 +1,10 @@
+[
+  "test_barricadas.py::test_correctLists",
+  "test_barricadas.py::test_incorrectLists",
+  "test_barricadas.py::test_correctLenList",
+  "test_barricadas.py::test_incorrectLenList",
+  "test_barricadas.py::test_correctRepInt",
+  "test_barricadas.py::test_incorrectRepInt",
+  "test_barricadas.py::test_correctIntegInt",
+  "test_barricadas.py::test_incorrectIntegInt"
+]
