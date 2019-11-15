@@ -1,9 +1,10 @@
 @echo off
 cls
-IF EXIST "C:\Program Files\VideoLAN\VLC\vlc.exe" (set comandovlc="C:\Program Files\VideoLAN\VLC\vlc") ELSE (ECHO No encontrado)
-IF EXIST "C:\Program Files (x86)\VideoLAN\VLC\vlc.exe" (set comandovlc="C:\Program Files (x86)\VideoLAN\VLC\vlc") ELSE (ECHO No encontrado en x86)
-echo %rutavlc%
+IF EXIST "C:\Program Files\VideoLAN\VLC\vlc.exe" (set vlc="C:\Program Files\VideoLAN\VLC\vlc") ELSE (ECHO No encontrado)
+IF EXIST "C:\Program Files (x86)\VideoLAN\VLC\vlc.exe" (set vlc="C:\Program Files (x86)\VideoLAN\VLC\vlc") ELSE (ECHO No encontrado en x86)
 set opcionesvlc=
+rem DANI PODEMOS USAR LA SIGUIENTE VARIABLE PARA METER LAS CARPETAS (O UNICA CANCION) QUE SE VA A REPRODUCIR, COMO HE PUESTO EN LA LINEA 77-81
+set cancionesParaReproducir=
 
 :menu
 echo Selecciona la opcion que desees:
@@ -46,7 +47,7 @@ echo -3: Seleccionar minutos
 echo. 
 echo -4: Seleccionar subtitulos
 echo.
-echo -5: Exit
+echo -5: Reproducir
 echo.
 set /p opcionv="Elige una opcion: "
 cls
@@ -70,18 +71,24 @@ exit
 
 
 :m1
+rem AQUI BASTA PONER UNA OPCION QUE SEA "Quiere reproducir todas las canciones en la carpeta musica, o un genero especifico?" Y METER O BIEN TODA LA CARPETA MUSICA 
+rem EN %cancionesParaReproducir% O BIEN LA (O LAS) CARPETAS DE GENERO QUE EL USUARIO ESCOJA
 set opcionesvlc=%opcionesvlc%--random
 goto :1
 
 :m2
+set /p palabraClave="Introduce una palabra clave del nombre de la cancion:"
+echo.
+set cancionesParaReproducir=*%palabraClave%*.mp3
+goto :1
 
 
 :m3
 
 
 :m4
+%vlc% %cancionesParaReproducir% %opciones%
 exit
-
 
 :v1
 set opcionesvlc=-f %opcionesvlc%
@@ -111,11 +118,12 @@ goto :v2
 
 
 :v5
+%vlc% %cancionesParaReproducir% %opciones%
 exit
 
 
 :w1
-%comandovlc% dshow://
+%vlc% dshow://
 exit
 
 
@@ -123,7 +131,7 @@ exit
 
 
 :w3
-%comandovlc% dshow:// --video-splitter wall --wall-cols 2 --wall-rows 2
+%vlc% dshow:// --video-splitter wall --wall-cols 2 --wall-rows 2
 exit
 
 
