@@ -3,9 +3,10 @@ cls
 IF EXIST "C:\Program Files\VideoLAN\VLC\vlc.exe" (set comandovlc="C:\Program Files\VideoLAN\VLC\vlc") ELSE (ECHO No encontrado)
 IF EXIST "C:\Program Files (x86)\VideoLAN\VLC\vlc.exe" (set comandovlc="C:\Program Files (x86)\VideoLAN\VLC\vlc") ELSE (ECHO No encontrado en x86)
 echo %rutavlc%
-set opcionesvlc = 
+set opcionesvlc=
 
 :menu
+echo Selecciona la opcion que desees:
 echo.
 echo -1: Musica
 echo.
@@ -15,7 +16,7 @@ echo -3: Webcam
 echo.
 echo -4: Exit
 echo.
-set /p opcion="Elige una opcion: "
+set /p opcion=" "
 cls
 goto :%opcion%
 
@@ -28,7 +29,7 @@ echo -2: Escoger una unica cancion
 echo.
 echo -3: Permitir repeticion
 echo. 
-echo -4: Volver al menu
+echo -4: Reproducir
 echo.
 set /p opcionm="Elige una opcion: "
 cls
@@ -45,7 +46,7 @@ echo -3: Seleccionar minutos
 echo. 
 echo -4: Seleccionar subtitulos
 echo.
-echo -5: Volver al menu
+echo -5: Exit
 echo.
 set /p opcionv="Elige una opcion: "
 cls
@@ -58,7 +59,7 @@ echo -1: Activar webcam
 echo.
 echo -2: Visualizacion en video-wall
 echo.
-echo -3: Volver al menu
+echo -3: Exit
 echo.
 set /p opcionw="Elige una opcion: "
 cls
@@ -69,8 +70,7 @@ exit
 
 
 :m1
-set opcionesvlc=%opcionesvlc%--random 
-echo %opcionesvlc%
+set opcionesvlc=%opcionesvlc%--random
 goto :1
 
 :m2
@@ -80,15 +80,29 @@ goto :1
 
 
 :m4
-goto :menu
+exit
 
 
 :v1
 set opcionesvlc=-f %opcionesvlc%
-echo %opcionesvlc
+goto :2
 
 :v2
+echo Video-wall:
+set /p numColumnas="Selecciona el número de columnas y pulsa enter:"
+cls
+set /p numFilas="Numero de filas:"
+cls
+set /p agree="Has seleccionado %columnas% columnas y %filas% filas. Es correcto? (y/n):"
+cls
+goto :%agree%
 
+:y
+set opcionesvlc=%opcionesvlc%--video-splitter wall --wall-cols %columnas% --wall-rows %filas%
+goto :2
+
+:n
+goto :v2
 
 :v3
 
@@ -97,18 +111,20 @@ echo %opcionesvlc
 
 
 :v5
-goto :menu
+exit
 
 
 :w1
+%comandovlc% dshow://
+exit
 
 
 :w2
 
 
 :w3
-goto :menu
-
+%comandovlc% dshow:// --video-splitter wall --wall-cols 2 --wall-rows 2
+exit
 
 
 pause
