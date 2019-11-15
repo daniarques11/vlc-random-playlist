@@ -4,29 +4,31 @@ import barricadas
 
 def cancionesRandom(diccionarioCanciones):
     try:
-        assert isinstance(diccionarioCanciones, dict) == True
-        #Assert para comprobar si la entrada es un diccionario
+        assert isinstance(diccionarioCanciones, dict) is True
+        # Assert para comprobar si la entrada es un diccionario
     except AssertionError:
         return "La entrada no es un diccionario"
     else:
-        listaCanciones = getListaCanciones(diccionarioCanciones)
-        listaDesordenada = desordenarCanciones(listaCanciones)
-        if barricadas.barricada(listaDesordenada, listaCanciones) == True:
+        listaCanciones = getListaDeDictKeys(diccionarioCanciones)
+        listaDesordenada = desordenarLista(listaCanciones)
+        # Comprobar que listaDesordenada es realmente
+        # una lista desordenada de listaCanciones
+        if barricadas.barricada(listaDesordenada, listaCanciones) is True:
             return listaDesordenada
         else:
             return "Algo ha ido mal"
 
 
-def getListaCanciones(diccionarioCanciones):
-    listaCanciones = []
-    for key in diccionarioCanciones:
-        listaCanciones.append(key)
-    return listaCanciones
+def getListaDeDictKeys(diccionario):
+    lista = []
+    for key in diccionario:
+        lista.append(key)
+    return lista
 
 
-def desordenarCanciones(listaCanciones):
-    listaCopia = listaCanciones[:]
-    assert listaCopia is not listaCanciones
+def desordenarLista(lista):
+    listaCopia = lista[:]
+    assert listaCopia is not lista
     listaDesordenada = []
     while listaCopia != []:
         numeroRandom = random.randint(0, len(listaCopia) - 1)
