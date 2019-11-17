@@ -145,7 +145,7 @@ echo -x: Exit
 echo.
 set /p opcionm="Elige una opcion: "
 cls
-goto :m113%opcionm%
+goto :m13%opcionm%
 
 :123
 echo Estas con las opciones de audio:
@@ -165,7 +165,7 @@ echo -x: Exit
 echo.
 set /p opcionm="Elige una opcion: "
 cls
-goto :m%opcionm%
+goto :m23%opcionm%
 
 :2
 echo Estas con las opciones de video:
@@ -247,6 +247,9 @@ goto :12
 
 rem Redireccion al menu de repetion
 :m3
+echo Repeticion activada
+pause > nul
+set opcionesvlc=%opcionesvlc%--loop
 cls
 goto :13
 
@@ -278,6 +281,9 @@ goto :12
 
 rem Redireccion al menu con genero y repeticion activada
 :m13
+echo Repeticion activada
+pause > nul
+set opcionesvlc=%opcionesvlc%--loop
 cls
 goto :113
 
@@ -295,8 +301,9 @@ rem Redireccion a la salida
 :m1x
 exit
 
+
 rem Redireccion al menu para seleccionar el genero
-:21
+:m21
 cls
 goto :m1
 
@@ -308,6 +315,7 @@ goto :m2
 rem Menu para seleccionar una unica cancion
 :m23
 echo Repeticion activada
+pause > nul
 set opcionesvlc=%opcionesvlc%--loop
 goto :123
 
@@ -324,6 +332,139 @@ goto :menu
 rem Redireccion a la salida
 :m2x
 exit
+
+
+rem Redireccion al menu para seleccionar el genero
+:m31
+cls
+goto :m1
+
+rem Menu para seleccionar una unica cancion
+:m32
+cls
+goto :m2
+
+rem Menu para seleccionar una unica cancion
+:m33
+echo Repeticion activada
+pause > nul
+set opcionesvlc=%opcionesvlc%--loop
+cls
+goto :123
+
+rem Ejecutar vlc
+:m3p
+%vlc% "./Musica/%/%cancionrep%" %opcionesvlc%
+exit
+
+rem Redireccion al menu general
+:m3z
+cls
+goto :menu
+
+rem Redireccion a la salida
+:m13x
+exit
+
+rem Redireccion al menu para seleccionar el genero
+:m31
+cls
+goto :m1
+
+rem Menu para seleccionar una unica cancion
+:m32
+cls
+goto :m2
+
+rem Menu para seleccionar una unica cancion
+:m33
+echo Repeticion activada
+pause > nul
+set opcionesvlc=%opcionesvlc%--loop
+cls
+goto :123
+
+rem Ejecutar vlc
+:m3p
+%vlc% "./Musica/%/%cancionrep%" %opcionesvlc%
+exit
+
+rem Redireccion al menu general
+:m3z
+cls
+goto :menu
+
+rem Redireccion a la salida
+:m3x
+exit
+
+
+
+rem Redireccion al menu para seleccionar el genero
+:m13
+cls
+goto :m1
+
+rem Menu para seleccionar una unica cancion
+:m32
+cls
+goto :m2
+
+rem Menu para seleccionar una unica cancion
+:m33
+echo Repeticion activada
+pause > nul
+set opcionesvlc=%opcionesvlc%--loop
+cls
+goto :123
+
+rem Ejecutar vlc
+:m3p
+%vlc% "./Musica/%/%cancionrep%" %opcionesvlc%
+exit
+
+rem Redireccion al menu general
+:m3z
+cls
+goto :menu
+
+rem Redireccion a la salida
+:m3x
+exit
+
+
+rem Redireccion al menu para seleccionar el genero
+:m31
+cls
+goto :m1
+
+rem Menu para seleccionar una unica cancion
+:m32
+cls
+goto :m2
+
+rem Menu para seleccionar una unica cancion
+:m33
+echo Repeticion activada
+pause > nul
+set opcionesvlc=%opcionesvlc%--loop
+cls
+goto :123
+
+rem Ejecutar vlc
+:m3p
+%vlc% "./Musica/%/%cancionrep%" %opcionesvlc%
+exit
+
+rem Redireccion al menu general
+:m3z
+cls
+goto :menu
+
+rem Redireccion a la salida
+:m3x
+exit
+
 
 :v1
 set opcionesvlc=-f %opcionesvlc%
