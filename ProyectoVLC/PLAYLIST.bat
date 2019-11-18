@@ -236,10 +236,10 @@ goto :1%oprandom%
 rem Menu para seleccionar una unica cancion
 :m2
 set /p palabraClaveCancion="Introduce una palabra clave del nombre de la cancion (solo para .mp3):"
-for /f "tokens=*" %%I in ('dir /b *%palabraClaveCancion%*.mp3') do 
+for /f "tokens=*" %%I in ('dir *%palabraClaveCancion%*.mp3') do echo "%%I"
 echo.
-rem for /F "tokens=*" %%I in ('dir /B Musica\*%palabraClaveCancion%*.mp3) do %vlc% "%%I"
-rem pause
+pause
+cls
 goto :12
 
 rem Redireccion al menu de repeticion
@@ -285,7 +285,7 @@ cls
 goto :113
 
 rem Ejecutar el vlc con la carpeta del genero y random
-:m1p
+:m13p
 %vlc% "./Musica/%generoRandom%" %opcionesVLC%
 exit
 
@@ -444,7 +444,7 @@ rem Menu para seleccionar una unica cancion
 :m33
 echo Repeticion activada
 pause > nul
-set opcionesVLC=%opcionesVLC%--loop
+set opcionesVLC=%opcionesVLC%--loop 
 cls
 goto :123
 
@@ -464,13 +464,13 @@ exit
 
 rem Añadir opcion fullscreen
 :v1
-set opcionesVLC=-f %opcionesVLC%
+set opcionesVLC=-f %opcionesVLC% 
 goto :2
 
 rem Añadir opcion video-wall permitiendo al usuario escojer columnas y filas
 :v2
 echo Video-wall:
-set /p numColumnas="Selecciona el número de columnas y pulsa enter:"
+set /p numColumnas="Selecciona el numero de columnas y pulsa enter:"
 cls
 set /p numFilas="Numero de filas:"
 cls
@@ -479,7 +479,8 @@ cls
 goto :%agree%
 
 :y
-set opcionesVLC=%opcionesVLC%--video-splitter wall --wall-cols %columnas% --wall-rows %filas%
+set opcionesVLC=%opcionesVLC%--video-splitter=wall --wall-cols %columnas% --wall-rows %filas% 
+cls
 goto :2
 
 :n
@@ -491,12 +492,16 @@ set /p inicioVideo="Selecciona inicio del video en segundos:"
 cls
 set /p finalVideo="Selecciona el final del video en segundos:"
 cls
-set opcionesVLC=%opcionesVLC%--start-time=%inicioVideo% --stop-time=%finalVideo%
+set opcionesVLC=%opcionesVLC%--start-time=%inicioVideo% --stop-time=%finalVideo% 
 goto :2
 
 rem Opcion de subtitulos
 :v4
-set opcionesVLC=%opcionesVLC%--sub-file=
+set opcionesVLC=%opcionesVLC:no-=%
+echo Subtitulos automaticos seleccionados correctamente
+echo.
+pause > nul
+cls
 goto :2
 
 rem Reproducir videos con las opciones seleccionadas
@@ -511,7 +516,7 @@ exit
 
 
 :w2
-%vlc% dshow:// --video-splitter wall --wall-cols 2 --wall-rows 2
+%vlc% dshow:// --video-splitter wall --wall-cols 2 --wall-rows 2 
 exit
 
 :w3
