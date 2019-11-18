@@ -2,22 +2,21 @@
 cls
 echo.
 color 4
-echo Tu programa VLC esta instalado?
+echo Comprobacion de si el programa VLC esta instalado...
 echo.
 rem Comprobacion de donde esta instalado el programa vlc
-IF EXIST "C:\Program Files\VideoLAN\VLC\vlc.exe" (ECHO VLC esta instalado!) ELSE (ECHO No encontrado VLC)
+IF EXIST "C:\Program Files\VideoLAN\VLC\vlc.exe" (ECHO VLC esta instalado!)
 IF EXIST "C:\Program Files\VideoLAN\VLC\vlc.exe" (set vlc="C:\Program Files\VideoLAN\VLC\vlc") 
 echo.
-IF EXIST "C:\Program Files (x86)\VideoLAN\VLC\vlc.exe" (ECHO VLC esta instalado!) ELSE (ECHO No encontrado VLC en x86)
+IF EXIST "C:\Program Files (x86)\VideoLAN\VLC\vlc.exe" (ECHO VLC esta instalado!)
 IF EXIST "C:\Program Files (x86)\VideoLAN\VLC\vlc.exe" (set vlc="C:\Program Files (x86)\VideoLAN\VLC\vlc") 
 echo.
 rem Si no se establece la variable vlc con la ruta, se ejecuta el instalador
 IF DEFINED %vlc% (ECHO VLC no esta instalado, continua para instalarlo)
-pause > nul
+pause
 cls
 IF DEFINED %vlc% (vlcInstall.exe)
-pause
-set opcionesvlc=
+set opcionesVLC= 
 rem variable pada poner solo una cancion
 set cancionUnica=
 rem variable para escoger el genero de las playlist random
@@ -27,7 +26,7 @@ cls
 rem Menu principal general
 :menu
 color f
-echo Selecciona la opcion que desees (1,2,3,4):
+echo Selecciona la opcion que desees (1,2,3,x):
 echo.
 echo -1: Musica
 echo.
@@ -230,27 +229,28 @@ echo.
 echo -x: Volver atras
 echo.
 set /p oprandom="Escoge un genero para la reproduccion aleatoria: "
-set opcionesvlc=--random 
+set opcionesVLC=--random 
 cls
 goto :1%oprandom%
 
 rem Menu para seleccionar una unica cancion
 :m2
 set /p palabraClaveCancion="Introduce una palabra clave del nombre de la cancion (solo para .mp3):"
+for /f "tokens=*" %%I in ('dir /b *%palabraClaveCancion%*.mp3') do 
 echo.
-for /f "tokens=*" %%I in ('dir /b *%palabraClaveCancion%*.mp3) do set cancionrep=*%palabraClaveCancion%*.mp3
-cls
+rem for /F "tokens=*" %%I in ('dir /B Musica\*%palabraClaveCancion%*.mp3) do %vlc% "%%I"
+rem pause
 goto :12
 
-rem Redireccion al menu de repetion
+rem Redireccion al menu de repeticion
 :m3
 echo Repeticion activada
 pause > nul
-set opcionesvlc=%opcionesvlc%--loop
+set opcionesVLC=%opcionesVLC%--loop
 cls
 goto :13
 
-rem Redireccion al menu de nusica por no haber seleccionado nada
+rem Redireccion al menu de musica por no haber seleccionado nada
 :mp
 echo No has seleccionado nada para reproducir
 pause > nul
@@ -280,13 +280,13 @@ rem Redireccion al menu con genero y repeticion activada
 :m13
 echo Repeticion activada
 pause > nul
-set opcionesvlc=%opcionesvlc%--loop
+set opcionesVLC=%opcionesVLC%--loop
 cls
 goto :113
 
 rem Ejecutar el vlc con la carpeta del genero y random
 :m1p
-%vlc% "./Musica/%generoRandom%" %opcionesvlc%
+%vlc% "./Musica/%generoRandom%" %opcionesVLC%
 exit
 
 rem Redireccion al menu general
@@ -313,12 +313,12 @@ rem Menu para seleccionar una unica cancion
 :m23
 echo Repeticion activada
 pause > nul
-set opcionesvlc=%opcionesvlc%--loop
+set opcionesVLC=%opcionesVLC%--loop
 goto :123
 
 rem Ejecutar vlc
 :m2p
-%vlc% "./Musica/%cancionrep%" %opcionesvlc%
+%vlc% "./Musica/%cancionrep%" %opcionesVLC%
 exit
 
 rem Redireccion al menu general
@@ -345,13 +345,13 @@ rem Menu para seleccionar una unica cancion
 :m33
 echo Repeticion activada
 pause > nul
-set opcionesvlc=%opcionesvlc%--loop
+set opcionesVLC=%opcionesVLC%--loop
 cls
 goto :123
 
 rem Ejecutar vlc
 :m3p
-%vlc% "./Musica/%cancionrep%" %opcionesvlc%
+%vlc% "./Musica/%cancionrep%" %opcionesVLC%
 exit
 
 rem Redireccion al menu general
@@ -377,13 +377,13 @@ rem Menu para seleccionar una unica cancion
 :m33
 echo Repeticion activada
 pause > nul
-set opcionesvlc=%opcionesvlc%--loop
+set opcionesVLC=%opcionesVLC%--loop
 cls
 goto :123
 
 rem Ejecutar vlc
 :m3p
-%vlc% "./Musica/%cancionrep%" %opcionesvlc%
+%vlc% "./Musica/%cancionrep%" %opcionesVLC%
 exit
 
 rem Redireccion al menu general
@@ -411,13 +411,13 @@ rem Menu para seleccionar una unica cancion
 :m33
 echo Repeticion activada
 pause > nul
-set opcionesvlc=%opcionesvlc%--loop
+set opcionesVLC=%opcionesVLC%--loop
 cls
 goto :123
 
 rem Ejecutar vlc
 :m3p
-%vlc% "./Musica/%cancionrep%" %opcionesvlc%
+%vlc% "./Musica/%cancionrep%" %opcionesVLC%
 exit
 
 rem Redireccion al menu general
@@ -444,13 +444,13 @@ rem Menu para seleccionar una unica cancion
 :m33
 echo Repeticion activada
 pause > nul
-set opcionesvlc=%opcionesvlc%--loop
+set opcionesVLC=%opcionesVLC%--loop
 cls
 goto :123
 
 rem Ejecutar vlc
 :m3p
-%vlc% "./Musica/%cancionrep%" %opcionesvlc%
+%vlc% "./Musica/%cancionrep%" %opcionesVLC%
 exit
 
 rem Redireccion al menu general
@@ -462,11 +462,12 @@ rem Redireccion a la salida
 :m3x
 exit
 
-
+rem Añadir opcion fullscreen
 :v1
-set opcionesvlc=-f %opcionesvlc%
+set opcionesVLC=-f %opcionesVLC%
 goto :2
 
+rem Añadir opcion video-wall permitiendo al usuario escojer columnas y filas
 :v2
 echo Video-wall:
 set /p numColumnas="Selecciona el número de columnas y pulsa enter:"
@@ -478,26 +479,29 @@ cls
 goto :%agree%
 
 :y
-set opcionesvlc=%opcionesvlc%--video-splitter wall --wall-cols %columnas% --wall-rows %filas%
+set opcionesVLC=%opcionesVLC%--video-splitter wall --wall-cols %columnas% --wall-rows %filas%
 goto :2
 
 :n
 goto :v2
 
+rem Opcion minutos del video (inicio y fin)
 :v3
 set /p inicioVideo="Selecciona inicio del video en segundos:"
 cls
 set /p finalVideo="Selecciona el final del video en segundos:"
 cls
-set opcionesVideo=%opcionesVideo%--start-time=%inicioVideo% --stop-time=%finalVideo%
+set opcionesVLC=%opcionesVLC%--start-time=%inicioVideo% --stop-time=%finalVideo%
 goto :2
 
+rem Opcion de subtitulos
 :v4
-set opcionesVideo=%opcionesVideo%--sub-autodetect-file
+set opcionesVLC=%opcionesVLC%--sub-file=
+goto :2
 
-
+rem Reproducir videos con las opciones seleccionadas
 :v5
-%vlc% Videos %opcionesVideo%
+%vlc% "./Videos" %opcionesVLC%
 exit
 
 rem Opciones de webcam
@@ -507,10 +511,10 @@ exit
 
 
 :w2
-
+%vlc% dshow:// --video-splitter wall --wall-cols 2 --wall-rows 2
+exit
 
 :w3
-%vlc% dshow:// --video-splitter wall --wall-cols 2 --wall-rows 2
 exit
 
  rem redirecciones por genero para asignar la variable por opcion, y sin comillas porque la direccion de ruta ya lleva al inicio y final
