@@ -18,7 +18,6 @@ cls
 IF DEFINED %vlc% (vlcInstall.exe)
 pause
 set opcionesvlc=
-rem DANI PODEMOS USAR LA SIGUIENTE VARIABLE PARA METER LAS CARPETAS (O UNICA CANCION) QUE SE VA A REPRODUCIR, COMO HE PUESTO EN LA LINEA 77-81
 rem variable pada poner solo una cancion
 set cancionUnica=
 rem variable para escoger el genero de las playlist random
@@ -202,8 +201,6 @@ exit
 
 rem Menu para seleccionar el genero
 :m1
-rem AQUI BASTA PONER UNA OPCION QUE SEA "Quiere reproducir todas las canciones en la carpeta musica, o un genero especifico?" Y METER O BIEN TODA LA CARPETA MUSICA 
-rem EN %cancionrep% O BIEN LA (O LAS) CARPETAS DE GENERO QUE EL USUARIO ESCOJA
 echo Estos son los generos a escoger: 
 echo.
 echo -a: 80'
@@ -321,7 +318,7 @@ goto :123
 
 rem Ejecutar vlc
 :m2p
-%vlc% "./Musica/%/%cancionrep%" %opcionesvlc%
+%vlc% "./Musica/%cancionrep%" %opcionesvlc%
 exit
 
 rem Redireccion al menu general
@@ -354,7 +351,7 @@ goto :123
 
 rem Ejecutar vlc
 :m3p
-%vlc% "./Musica/%/%cancionrep%" %opcionesvlc%
+%vlc% "./Musica/%cancionrep%" %opcionesvlc%
 exit
 
 rem Redireccion al menu general
@@ -386,7 +383,7 @@ goto :123
 
 rem Ejecutar vlc
 :m3p
-%vlc% "./Musica/%/%cancionrep%" %opcionesvlc%
+%vlc% "./Musica/%cancionrep%" %opcionesvlc%
 exit
 
 rem Redireccion al menu general
@@ -453,7 +450,7 @@ goto :123
 
 rem Ejecutar vlc
 :m3p
-%vlc% "./Musica/%/%cancionrep%" %opcionesvlc%
+%vlc% "./Musica/%cancionrep%" %opcionesvlc%
 exit
 
 rem Redireccion al menu general
@@ -488,13 +485,18 @@ goto :2
 goto :v2
 
 :v3
-
+set /p inicioVideo="Selecciona inicio del video en segundos:"
+cls
+set /p finalVideo="Selecciona el final del video en segundos:"
+cls
+set opcionesVideo=%opcionesVideo%--start-time=%inicioVideo% --stop-time=%finalVideo%
+goto :2
 
 :v4
 
 
 :v5
-%vlc% %videorep% %opcionesvideo%
+%vlc% "./Video" %opcionesVideo%
 exit
 
 rem Opciones de webcam
