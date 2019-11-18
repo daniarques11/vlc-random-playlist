@@ -236,9 +236,9 @@ goto :1%oprandom%
 
 rem Menu para seleccionar una unica cancion
 :m2
-set /p palabraClave="Introduce una palabra clave del nombre de la cancion (solo para .mp3):"
+set /p palabraClaveCancion="Introduce una palabra clave del nombre de la cancion (solo para .mp3):"
 echo.
-set cancionrep=*%palabraClave%*.mp3
+for /f "tokens=*" %%I in ('dir /b *%palabraClaveCancion%*.mp3) do set cancionrep=*%palabraClaveCancion%*.mp3
 cls
 goto :12
 
@@ -417,7 +417,7 @@ goto :123
 
 rem Ejecutar vlc
 :m3p
-%vlc% "./Musica/%/%cancionrep%" %opcionesvlc%
+%vlc% "./Musica/%cancionrep%" %opcionesvlc%
 exit
 
 rem Redireccion al menu general
@@ -493,10 +493,11 @@ set opcionesVideo=%opcionesVideo%--start-time=%inicioVideo% --stop-time=%finalVi
 goto :2
 
 :v4
+set opcionesVideo=%opcionesVideo%--sub-autodetect-file
 
 
 :v5
-%vlc% "./Video" %opcionesVideo%
+%vlc% Videos %opcionesVideo%
 exit
 
 rem Opciones de webcam

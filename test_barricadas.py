@@ -24,7 +24,8 @@ def test_diferenteLongitudListas():
 
 # Check que pase solo la funcion de repetición
 def test_countCancionesOutputEsIgualInput():
-    assert barricadas.checkCountCanciones([1, 2, 3, 4, 4], [4, 2, 1, 3, 4]) is True
+    assert barricadas.checkCountCanciones(
+        [1, 2, 3, 4, 4], [4, 2, 1, 3, 4]) is True
 
 
 def test_countCancionesOutputEsDiferenteInput():
@@ -34,7 +35,8 @@ def test_countCancionesOutputEsDiferenteInput():
 
 # Check que pase solo la funcion de integridad
 def test_integridadCorrecto():
-    assert barricadas.checkIntegridad([1, 2, 3, 4, 5], [1, 2, 3, 4, 5]) is True
+    assert barricadas.checkIntegridad(['1', '2', '3', '4', '5'], [
+                                      '1', '3', '2', '5', '4']) is True
 
 
 def test_integridadIncorrecto():
