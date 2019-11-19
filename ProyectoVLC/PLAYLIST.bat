@@ -236,8 +236,8 @@ goto :1%oprandom%
 rem Menu para seleccionar una unica cancion
 :m2
 set /p palabraClaveCancion="Introduce una palabra clave del nombre de la cancion (solo para .mp3):"
-for /f "tokens=*" %%I in ('dir *%palabraClaveCancion%*.mp3') do echo "%%I"
-echo.
+rem for /f "tokens=" %%I in (' dir *"%palabraClaveCancion%"*.mp3') do set cancionrep=%%I
+rem echo %palabraClaveCancion%
 pause
 cls
 goto :12

@@ -9,7 +9,7 @@ goto :%agree%
 cls
 echo.
 md .\Musica .\Videos 
-md .\Musica\Pop .\Musica\Rock .\Musica\"Hip Hop" .\Musica\Indie .\Musica\Pop .\Musica\"80's" .\Musica\"90's" .\Musica\"Heavy Metal" .\Musica\Punk .\Musica\Reggaeton .\Musica\Reggae .\Musica\Alternative .\Musica\Others
+md .\Musica\Pop .\Musica\Rock .\Musica\"Hip Hop" .\Musica\Indie .\Musica\Pop .\Musica\"80's" .\Musica\"90's" .\Musica\"Heavy Metal" .\Musica\Punk .\Musica\Reggaeton .\Musica\Reggae .\Musica\Alternative .\Musica\Others .\Musica\"Toda mi musica"
 md .\Videos\Clips .\Videos\Cortos .\Videos\Medios .\Videos\Largos .\Videos\Peliculas .\Videos\Youtube
 cls
 echo.
