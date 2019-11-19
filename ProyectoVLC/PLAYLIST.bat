@@ -82,26 +82,6 @@ set /p opcionm="Elige una opcion: "
 cls
 goto :m1%opcionm%
 
-rem Menu para una vez seleccionada la unica cancion
-:12
-echo Estas con las opciones de audio:
-echo.
-color 6
-echo -1: Canciones aleatorias por genero
-echo.
-echo -2: Escoger una unica cancion (Seleccionada: %cancionrep%)
-echo.
-echo -3: Permitir repeticion
-echo.
-echo -p: Reproducir
-echo.
-echo -z: Atras
-echo.
-echo -x: Exit
-echo.
-set /p opcionm="Elige una opcion: "
-cls
-goto :m2%opcionm%
 
 rem Menu con repeticion activada
 :13
@@ -145,25 +125,6 @@ set /p opcionm="Elige una opcion: "
 cls
 goto :m13%opcionm%
 
-:123
-echo Estas con las opciones de audio:
-echo.
-color 6
-echo -1: Canciones aleatorias por genero
-echo.
-echo -2: Escoger una unica cancion (Seleccionada: %cancionrep%)
-echo.
-echo -3: Permitir repeticion (Seleccionado)
-echo.
-echo -p: Reproducir
-echo.
-echo -z: Atras
-echo.
-echo -x: Exit
-echo.
-set /p opcionm="Elige una opcion: "
-cls
-goto :m23%opcionm%
 
 :2
 echo Estas con las opciones de video:
@@ -235,12 +196,14 @@ goto :1%oprandom%
 
 rem Menu para seleccionar una unica cancion
 :m2
-set /p palabraClaveCancion="Introduce una palabra clave del nombre de la cancion (solo para .mp3):"
-rem for /f "tokens=" %%I in (' dir *"%palabraClaveCancion%"*.mp3') do set cancionrep=%%I
-rem echo %palabraClaveCancion%
-pause
-cls
-goto :12
+echo Escribe una parte del nombre de una de las siguientes canciones:
+echo.
+dir /b .\Musica\"Toda mi musica"
+echo.
+set /p palabraClaveCancion="Palabra clave(solo para .mp3):"
+for /f "tokens=*" %%I in (' dir /b .\Musica\"Toda mi musica"\*%palabraClaveCancion%*.mp3') do set cancionUnica=%%I
+%vlc% "./Musica/Toda mi musica/%cancionUnica%"
+exit
 
 rem Redireccion al menu de repeticion
 :m3
@@ -284,8 +247,14 @@ set opcionesVLC=%opcionesVLC%--loop
 cls
 goto :113
 
+rem Redireccion a reproducir genero random
+:m1p
+goto :m13p
+
+
 rem Ejecutar el vlc con la carpeta del genero y random
 :m13p
+echo %vlc% "./Musica/%generoRandom%" %opcionesVLC%
 %vlc% "./Musica/%generoRandom%" %opcionesVLC%
 exit
 
@@ -304,12 +273,8 @@ rem Redireccion al menu para seleccionar el genero
 cls
 goto :m1
 
-rem Menu para seleccionar una unica cancion
-:m22
-cls
-goto :m2
 
-rem Menu para seleccionar una unica cancion
+rem Menu para seleccionar repeticion
 :m23
 echo Repeticion activada
 pause > nul
@@ -318,7 +283,7 @@ goto :123
 
 rem Ejecutar vlc
 :m2p
-%vlc% "./Musica/%cancionrep%" %opcionesVLC%
+%vlc% "./Musica" %opcionesVLC%
 exit
 
 rem Redireccion al menu general
@@ -336,12 +301,8 @@ rem Redireccion al menu para seleccionar el genero
 cls
 goto :m1
 
-rem Menu para seleccionar una unica cancion
-:m32
-cls
-goto :m2
 
-rem Menu para seleccionar una unica cancion
+rem Menu para seleccionar repeticion
 :m33
 echo Repeticion activada
 pause > nul
@@ -351,7 +312,7 @@ goto :123
 
 rem Ejecutar vlc
 :m3p
-%vlc% "./Musica/%cancionrep%" %opcionesVLC%
+%vlc% "./Musica" %opcionesVLC%
 exit
 
 rem Redireccion al menu general
@@ -368,12 +329,9 @@ rem Redireccion al menu para seleccionar el genero
 cls
 goto :m1
 
-rem Menu para seleccionar una unica cancion
-:m32
-cls
-goto :m2
 
-rem Menu para seleccionar una unica cancion
+
+rem Menu para seleccionar repeticion
 :m33
 echo Repeticion activada
 pause > nul
@@ -383,7 +341,7 @@ goto :123
 
 rem Ejecutar vlc
 :m3p
-%vlc% "./Musica/%cancionrep%" %opcionesVLC%
+%vlc% "./Musica" %opcionesVLC%
 exit
 
 rem Redireccion al menu general
@@ -402,12 +360,8 @@ rem Redireccion al menu para seleccionar el genero
 cls
 goto :m1
 
-rem Menu para seleccionar una unica cancion
-:m32
-cls
-goto :m2
 
-rem Menu para seleccionar una unica cancion
+rem Menu para seleccionar repeticion
 :m33
 echo Repeticion activada
 pause > nul
@@ -417,7 +371,7 @@ goto :123
 
 rem Ejecutar vlc
 :m3p
-%vlc% "./Musica/%cancionrep%" %opcionesVLC%
+%vlc% "./Musica" %opcionesVLC%
 exit
 
 rem Redireccion al menu general
@@ -435,10 +389,6 @@ rem Redireccion al menu para seleccionar el genero
 cls
 goto :m1
 
-rem Menu para seleccionar una unica cancion
-:m32
-cls
-goto :m2
 
 rem Menu para seleccionar una unica cancion
 :m33
@@ -450,7 +400,7 @@ goto :123
 
 rem Ejecutar vlc
 :m3p
-%vlc% "./Musica/%cancionrep%" %opcionesVLC%
+%vlc% "./Musica" %opcionesVLC%
 exit
 
 rem Redireccion al menu general
@@ -474,12 +424,12 @@ set /p numColumnas="Selecciona el numero de columnas y pulsa enter:"
 cls
 set /p numFilas="Numero de filas:"
 cls
-set /p agree="Has seleccionado %columnas% columnas y %filas% filas. Es correcto? (y/n):"
+set /p agree="Has seleccionado %numColumnas% columnas y %numFilas% filas. Es correcto? (y/n):"
 cls
 goto :%agree%
 
 :y
-set opcionesVLC=%opcionesVLC%--video-splitter=wall --wall-cols %columnas% --wall-rows %filas% 
+set opcionesVLC=%opcionesVLC%--video-splitter=wall --wall-cols %numColumnas% --wall-rows %numFilas% 
 cls
 goto :2
 
@@ -506,6 +456,7 @@ goto :2
 
 rem Reproducir videos con las opciones seleccionadas
 :v5
+echo %vlc% "./Videos" %opcionesVLC%
 %vlc% "./Videos" %opcionesVLC%
 exit
 

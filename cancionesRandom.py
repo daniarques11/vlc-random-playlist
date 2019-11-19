@@ -13,10 +13,8 @@ def cancionesRandom(diccionarioCanciones):
         listaDesordenada = desordenarLista(listaCanciones)
         # Comprobar que listaDesordenada es realmente
         # una lista desordenada de listaCanciones
-        if barricadas.barricada(listaDesordenada, listaCanciones) is True:
-            return listaDesordenada
-        else:
-            return "Algo ha ido mal"
+        assert barricadas.barricada(listaDesordenada, listaCanciones) is True
+        return listaDesordenada
 
 
 def getListaDeDictKeys(diccionario):
