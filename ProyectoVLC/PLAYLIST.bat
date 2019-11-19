@@ -226,7 +226,7 @@ cls
 goto :menu
 
 rem Redireccion a la salida
-:mz
+:mx
 exit
 
 rem Redireccion al selector de generos
@@ -234,10 +234,11 @@ rem Redireccion al selector de generos
 cls
 goto :m1
 
-rem Redireccion al selector musica
+rem Redireccion al selector unica cancion
 :m12
 cls
-goto :12
+goto :m2
+
 
 rem Redireccion al menu con genero y repeticion activada
 :m13
@@ -251,12 +252,32 @@ rem Redireccion a reproducir genero random
 :m1p
 goto :m13p
 
+rem Volver a seleccionar genero teniendo repeticion y genero seleccionados
+:m131
+goto :m1
+
+rem Escoger unica cancion teniendo repeticion y genero seleccionados
+:m132
+goto :m2
+
+rem Escoger repeticion otra vez 
+:m133
+goto :113
 
 rem Ejecutar el vlc con la carpeta del genero y random
 :m13p
 echo %vlc% "./Musica/%generoRandom%" %opcionesVLC%
 %vlc% "./Musica/%generoRandom%" %opcionesVLC%
 exit
+
+rem Redireccion a la salida
+:m13x
+exit
+
+rem Ir a menu general
+:m13z
+cls
+goto :menu
 
 rem Redireccion al menu general
 :m1z
@@ -269,46 +290,19 @@ exit
 
 
 rem Redireccion al menu para seleccionar el genero
-:m21
-cls
-goto :m1
-
-
-rem Menu para seleccionar repeticion
-:m23
-echo Repeticion activada
-pause > nul
-set opcionesVLC=%opcionesVLC%--loop
-goto :123
-
-rem Ejecutar vlc
-:m2p
-%vlc% "./Musica" %opcionesVLC%
-exit
-
-rem Redireccion al menu general
-:m2z
-cls
-goto :menu
-
-rem Redireccion a la salida
-:m2x
-exit
-
-
-rem Redireccion al menu para seleccionar el genero
 :m31
 cls
 goto :m1
 
 
-rem Menu para seleccionar repeticion
-:m33
-echo Repeticion activada
-pause > nul
-set opcionesVLC=%opcionesVLC%--loop
+:m32
 cls
-goto :123
+goto:m2
+
+
+rem Menu para seleccionar repeticion otra vez
+:m33
+goto :m3
 
 rem Ejecutar vlc
 :m3p
@@ -320,39 +314,10 @@ rem Redireccion al menu general
 cls
 goto :menu
 
-rem Redireccion a la salida
-:m13x
-exit
-
-rem Redireccion al menu para seleccionar el genero
-:m31
-cls
-goto :m1
-
-
-
-rem Menu para seleccionar repeticion
-:m33
-echo Repeticion activada
-pause > nul
-set opcionesVLC=%opcionesVLC%--loop
-cls
-goto :123
-
-rem Ejecutar vlc
-:m3p
-%vlc% "./Musica" %opcionesVLC%
-exit
-
-rem Redireccion al menu general
-:m3z
-cls
-goto :menu
 
 rem Redireccion a la salida
 :m3x
 exit
-
 
 
 rem Redireccion al menu para seleccionar el genero
@@ -361,61 +326,11 @@ cls
 goto :m1
 
 
-rem Menu para seleccionar repeticion
-:m33
-echo Repeticion activada
-pause > nul
-set opcionesVLC=%opcionesVLC%--loop
-cls
-goto :123
-
-rem Ejecutar vlc
-:m3p
-%vlc% "./Musica" %opcionesVLC%
-exit
-
-rem Redireccion al menu general
-:m3z
-cls
-goto :menu
-
-rem Redireccion a la salida
-:m3x
-exit
-
-
-rem Redireccion al menu para seleccionar el genero
-:m31
-cls
-goto :m1
-
-
-rem Menu para seleccionar una unica cancion
-:m33
-echo Repeticion activada
-pause > nul
-set opcionesVLC=%opcionesVLC%--loop 
-cls
-goto :123
-
-rem Ejecutar vlc
-:m3p
-%vlc% "./Musica" %opcionesVLC%
-exit
-
-rem Redireccion al menu general
-:m3z
-cls
-goto :menu
-
-rem Redireccion a la salida
-:m3x
-exit
-
 rem Añadir opcion fullscreen
 :v1
 set opcionesVLC=-f %opcionesVLC% 
 goto :2
+
 
 rem Añadir opcion video-wall permitiendo al usuario escojer columnas y filas
 :v2
