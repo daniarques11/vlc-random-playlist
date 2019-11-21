@@ -6,7 +6,7 @@ Daniel Arqués Toro, Daniel Jonathan Zurita Mena
 <!--- Aquest arxiu està validat amb www.xmlvalidation.com, a diferència de l'altre que contenia dues errades-->
 <library xml:lang="ca">
     <tracks>
-        <track id="190029" ruta="c:\users\dajoz\music\algo.mp3"> <!-- L'id està format per l'id de l'àlbum de la cançó seguit del número de cançó dins l'àlbum -->
+        <track id="190029" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\A veure que en fem.mp3"> <!-- L'id està format per l'id de l'àlbum de la cançó seguit del número de cançó dins l'àlbum -->
             <name>
                 A veure què en fem
             </name>
@@ -53,7 +53,7 @@ Daniel Arqués Toro, Daniel Jonathan Zurita Mena
                 mp3
             </media_type>
         </track>
-        <track id="431202" xml:lang="en" ruta="C:\">
+        <track id="431202" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Cold as Ice.mp3">
             <name>
                 Cold as Ice
             </name>
@@ -106,7 +106,7 @@ Daniel Arqués Toro, Daniel Jonathan Zurita Mena
                 mp4
             </media_type>
         </track>
-        <track id="11255567" xml:lang="en" ruta="C">
+        <track id="11255567" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Zero.mp4">
             <name>
                 Zero
             </name>
@@ -156,7 +156,7 @@ Daniel Arqués Toro, Daniel Jonathan Zurita Mena
                 mp3
             </media_type>
         </track>
-        <track id="938421" xml:lang="es" ruta="CC">
+        <track id="938421" xml:lang="es" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\No dudaria.mp4">
             <name>
                 No dudaría
             </name>

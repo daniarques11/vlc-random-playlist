@@ -8,9 +8,3 @@ def getListaRutasRandom():
     listaRandom = cancionesRandom(dicioRutas)
     return listaRandom
 
-
-def convertirListaAString(lista):
-    return " ".join(str(elemento) for elemento in lista)
-
-
-print(convertirListaAString(getListaRutasRandom()))
