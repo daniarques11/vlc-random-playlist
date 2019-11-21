@@ -1,8 +1,13 @@
 from parseadorXML import parser
 from cancionesRandom import cancionesRandom
+import os
 
-def api():
+def getListaRutasRandom():
     dicioRutas = parser("libraryP.xml")
-    print(cancionesRandom(dicioRutas))
+    listaRandom = cancionesRandom(dicioRutas)
+    return listaRandom
 
-api()
+def convertirListaAString(lista):
+    return " ".join(str(elemento) for elemento in lista)
+
+print(convertirListaAString(getListaRutasRandom()))
