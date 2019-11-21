@@ -33,18 +33,3 @@ def desordenarLista(lista):
         # quitar un elemento de lista y meterlo al final de listaDesordenada
         listaDesordenada.append(listaCopia.pop(numeroRandom))
     return listaDesordenada
-
-
-print(cancionesRandom({'213812':
-                       {'name': 'A veure que', 'band': 'Joan Manuel Serrat',
-                           'album': '100 mejores canciones', 'ruta': 'C:\\efef'},
-                       '21846173':
-                       {'name': 'Cold as Ice', 'band': 'Foreigner',
-                           'album': 'Foreigner', 'ruta': 'C:\\eqriq2r812ru2'},
-                       '237461794':
-                       {'name': 'Zero', 'band': 'Imagine Dragons',
-                        'album': 'Zero', 'ruta': 'C:\\eqr463563634'},
-                       '536351351':
-                       {'name': 'No dudaria', 'band': 'Antonio Flores',
-                        'album': 'Antonio', 'ruta': 'C:uahweufb3e'}
-                       }))
