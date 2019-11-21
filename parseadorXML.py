@@ -9,5 +9,5 @@ def parser(library):
     for library in root.iter("library"):
         for tracks in library:
             for track in tracks.findall("track"):
-                tracksDic[track.attrib['id']] = track.attrib['ruta']
+                tracksDic[track.attrib['ruta']] = track.attrib['id']
     return tracksDic
