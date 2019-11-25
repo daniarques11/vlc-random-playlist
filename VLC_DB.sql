@@ -13,8 +13,19 @@ CREATE TABLE Artists (
     )engine=InnoDB;
 
 /* In this table, we add the column id_band, which is a reflexive relationship that
-allows us storing information about the bands and the artists that belong to that group right now
+allows us storing information about which artists are bands
 */
+
+CREATE TABLE Band_Artists (
+    band_id VARCHAR(10) NOT NULL,
+    artist_id VARCHAR(10) NOT NULL,
+    start_date date NOT NULL,
+    end_date date,
+    PRIMARY KEY (band_id, artist_id, start_date),
+    FOREIGN KEY (band_id) REFERENCES Artists (id),
+    FOREIGN KEY (artist_id) REFERENCES Artists (id)
+)engine=InnoDB;
+
 
 CREATE TABLE Albums (
     id int(10) NOT NULL, 
@@ -86,6 +97,14 @@ CREATE TABLE Playlist_Tracks (
     PRIMARY KEY (id_playlist, id_track),
     FOREIGN KEY (id_playlist) REFERENCES Playlists (id),
     FOREIGN KEY (id_track) REFERENCES Tracks (id)
+)engine=InnoDB;
+
+CREATE TABLE Track_Artists (
+    id_track int(10) NOT NULL,
+    id_artist VARCHAR(10) NOT NULL,
+    PRIMARY KEY (id_track, id_artist),
+    FOREIGN KEY (id_track) REFERENCES Tracks (id),
+    FOREIGN KEY (id_artist) REFERENCES Artists (id)
 )engine=InnoDB;
 
 insert into Artists values 
