@@ -4,7 +4,7 @@ CREATE DATABASE VLC;
 
 USE VLC;
 
-​ CREATE TABLE Artists (
+CREATE TABLE Artists (
     id VARCHAR(10) NOT NULL,
     name VARCHAR(50) NOT NULL,
     id_band VARCHAR(10),
@@ -12,9 +12,6 @@ USE VLC;
     FOREIGN KEY (id_band) REFERENCES Artists (id)
 ) engine = InnoDB;
 
-/* In this table, we add the column id_band, which is a reflexive relationship that
- allows us storing information about which artists are bands
- */
 CREATE TABLE Band_Artists (
     band_id VARCHAR(10) NOT NULL,
     artist_id VARCHAR(10) NOT NULL,
@@ -64,7 +61,7 @@ CREATE TABLE Tracks (
     bytes int(20),
     id_media_type int(2),
     id_genre int(3),
-    path VARCHAR NOT NULL,
+    path VARCHAR(200) NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (id_media_type) REFERENCES Media_Types (id),
     FOREIGN KEY (id_genre) REFERENCES Genres (id)
@@ -193,10 +190,43 @@ values
 insert into
     Tracks
 values
-    (190029, 'A veure què en fem', 272000, 3287401, 1, 15, 'C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\A veure que en fem.mp3'),
-    (431202, 'Cold as Ice', 199000, 3321379, 4, 1, 'C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Cold as Ice.mp3'),
-    (11255567, 'Zero', 210000, 5320000, 1, 12, 'C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Zero.mp4'),
-    (938421, 'No dudaría', 212000, 2503295, 3, 68, 'C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\No dudaria.mp4');
+    (
+        190029,
+        'A veure què en fem',
+        272000,
+        3287401,
+        1,
+        15,
+        'C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\A veure que en fem.mp3'
+    ),
+    (
+        431202,
+        'Cold as Ice',
+        199000,
+        3321379,
+        4,
+        1,
+        'C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Cold as Ice.mp3'
+    ),
+    (
+        11255567,
+        'Zero',
+        210000,
+        5320000,
+        1,
+        12,
+        'C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Zero.mp4'
+    ),
+    (
+        938421,
+        'No dudaría',
+        212000,
+        2503295,
+        3,
+        68,
+        'C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\No dudaria.mp4'
+    );
+
 insert into
     Album_Tracks
 values
