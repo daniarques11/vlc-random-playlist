@@ -21,6 +21,7 @@ def getStringRutas(lista):
 
 def ejecutarVLC(vlcRuta, stringRutas):
     comandoCMD = vlcRuta + " " + stringRutas + "--play-and-exit"
+    print(comandoCMD)
     os.popen(comandoCMD)
 
 
