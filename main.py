@@ -16,10 +16,12 @@ def convertirRutasAString(lista):
         stringResultado = stringResultado + '"' + elemento + '" '
     return stringResultado
 
+
 def ejecutarVLC(vlcRuta, stringRutas):
     ejecutable = vlcRuta + " " + stringRutas
     print(ejecutable)
     os.popen(ejecutable)
+
 
 vlcRuta = '"C:\\Program Files (x86)\\VideoLAN\\VLC\\vlc"'
 libreria = "libraryP.xml"
