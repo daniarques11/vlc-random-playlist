@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 
 
-def parser(library):
+def parsear(library):
     tree = ET.parse(library)
     root = tree.getroot()
     tracksDic = {}

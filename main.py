@@ -1,30 +1,31 @@
-from parseadorXML import parser
+from parseadorXML import parsear
 from cancionesRandom import cancionesRandom
 import os
-import subprocess
+
+# Obtener diccionario con rutas como keys, e id como valores
+# para luego devolver lista con rutas random
 
 
 def getListaRutasRandom(libreria):
-    dicioRutas = parser(libreria)
-    listaRandom = cancionesRandom(dicioRutas)
+    diccionarioRutas = parsear(libreria)
+    listaRandom = cancionesRandom(diccionarioRutas)
     return listaRandom
 
 
-def convertirRutasAString(lista):
+def getStringRutas(lista):
     stringResultado = ''
     for elemento in lista:
-        stringResultado = stringResultado + '"' + elemento + '" ' 
+        stringResultado = stringResultado + '"' + elemento + '" '
     return stringResultado
 
 
 def ejecutarVLC(vlcRuta, stringRutas):
-    ejecutable = vlcRuta + " " + stringRutas + "--play-and-exit"
-    print(ejecutable)
-    os.popen(ejecutable)
+    comandoCMD = vlcRuta + " " + stringRutas + "--play-and-exit"
+    os.popen(comandoCMD)
 
 
 vlcRuta = '"C:\\Program Files (x86)\\VideoLAN\\VLC\\vlc"'
 libreria = "libraryP.xml"
 listaRutas = getListaRutasRandom(libreria)
-stringRutas = convertirRutasAString(listaRutas)
+stringRutas = getStringRutas(listaRutas)
 ejecutarVLC(vlcRuta, stringRutas)
