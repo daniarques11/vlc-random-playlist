@@ -13,11 +13,11 @@ def getListaRutasRandom(libreria):
 def convertirRutasAString(lista):
     stringResultado = ''
     for elemento in lista:
-        stringResultado = stringResultado + '"' + elemento + '" '
+        stringResultado = stringResultado + '"' + elemento + '" ' 
     return stringResultado
 
 def ejecutarVLC(vlcRuta, stringRutas):
-    ejecutable = vlcRuta + " " + stringRutas
+    ejecutable = vlcRuta + " " + stringRutas + "--play-and-exit"
     print(ejecutable)
     os.popen(ejecutable)
 
