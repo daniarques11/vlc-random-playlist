@@ -15,8 +15,8 @@ CREATE TABLE Artists (
 CREATE TABLE Band_Artists (
     band_id VARCHAR(10) NOT NULL,
     artist_id VARCHAR(10) NOT NULL,
-    start_date date NOT NULL,
-    end_date date,
+    start_date year NOT NULL,
+    end_date year,
     PRIMARY KEY (band_id, artist_id, start_date),
     FOREIGN KEY (band_id) REFERENCES Artists (id),
     FOREIGN KEY (artist_id) REFERENCES Artists (id)
@@ -124,6 +124,28 @@ values
     ('US24432101', 'Daniel Platzman', 'US92113442'),
     ('US90034511', 'John Hill', NULL),
     ('ES7521', 'Antonio Flores', NULL);
+
+insert into
+    Band_Artists
+values
+    ('CAT102', 'CAT123', '2007', NULL),
+    ('CAT102', 'CAT219', '2007', NULL),
+    ('CAT102', 'CAT219', '2007', NULL),
+    ('CAT102', 'CAT432', '2007', NULL),
+    ('US832091', 'US44349', '1976', '1990'),
+    ('US832091', 'US44349', '1992', '2003'),
+    ('US832091', 'US44349', '2017', NULL),
+    ('US832091', 'EN28921', '1976', NULL),
+    ('US832091', 'EN8973', '1976', '1980'),
+    ('US832091', 'EN8973', '2017', NULL),
+    ('US832091', 'US2481240', '1976', '1980'),
+    ('US832091', 'US2481240', '2017', NULL),
+    ('US832091', 'US2314553', '1976', '1979'),
+    ('US832091', 'EN21245', '1976', '1992'),
+    ('US92113442', 'US9844239', '2008', NULL),
+    ('US92113442', 'US9924780', '2009', NULL),
+    ('US92113442', 'US10233120', '2009', NULL),
+    ('US92113442', 'US24432101', '20011', NULL);
 
 insert into
     Albums
@@ -254,3 +276,23 @@ values
     (1, 431202, 3),
     (1, 11255567, 4),
     (2, 190029, 2);
+
+insert into
+    Track_Artists
+values
+    (190029, 'CAT123'),
+    (190029, 'CAT219'),
+    (190029, 'CAT432'),
+    (190029, 'CAT541'),
+    (431202, 'US44349'),
+    (431202, 'EN28921'),
+    (431202, 'EN8973'),
+    (431202, 'US2481240'),
+    (431202, 'US2314553'),
+    (431202, 'EN21245'),
+    (11255567, 'US9844239'),
+    (11255567, 'US9924780'),
+    (11255567, 'US10233120'),
+    (11255567, 'US24432101'),
+    (11255567, 'US90034511'),
+    (938421, 'ES7521');
