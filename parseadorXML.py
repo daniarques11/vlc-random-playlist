@@ -2,11 +2,11 @@ import xml.etree.ElementTree as ET
 import types
 
 
-def parsear(library):
+def parsear(libreriaXML):
     try:
-        tree = ET.parse(library)
+        tree = ET.parse(libreriaXML)
     except FileNotFoundError:
-        print("No se ha encontrado el archivo " + library +
+        print("No se ha encontrado el archivo " + libreriaXML +
               ", comprueba que la ruta del archivo coincide con la ruta de la variable libreria en main.py")
         exit()
     except:
@@ -14,10 +14,10 @@ def parsear(library):
         exit()
     else:
         root = tree.getroot()
-        tracksDic = {}
+        cancionesDict = {}
 
-        for library in root.iter("library"):
-            for tracks in library:
+        for libreriaXML in root.iter("library"):
+            for tracks in libreriaXML:
                 for track in tracks.findall("track"):
-                    tracksDic[track.attrib['ruta']] = track.attrib['id']
-        return tracksDic
+                    cancionesDict[track.attrib['ruta']] = track.attrib['id']
+        return cancionesDict
