@@ -4,11 +4,11 @@ import barricadas
 
 
 def test_barricadaListasCorrectas():
-    assert barricadas.barricada([1, 2, 3, 4, 5], [5, 4, 3, 2, 1]) is True
+    assert barricadas.checkListaOutput([1, 2, 3, 4, 5], [5, 4, 3, 2, 1]) is True
 
 
 def test_barricadaListasIncorrectas():
-    assert barricadas.barricada([1, 2, 3, 4, 5], [6, 9, 2, 1]) is False
+    assert barricadas.checkListaOutput([1, 2, 3, 4, 5], [6, 9, 2, 1]) is False
 
 
 # Check que pase solo la funcion de longitud

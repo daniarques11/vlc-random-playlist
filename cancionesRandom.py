@@ -2,15 +2,15 @@ import random
 import barricadas
 
 
-def cancionesRandom(diccionarioCanciones):
-    assert isinstance(diccionarioCanciones, dict) is True
+def cancionesRandom(cancionesDict):
+    assert isinstance(cancionesDict, dict) is True
     # Assert para comprobar si la entrada es un diccionario
 
-    listaCanciones = getListaDeDictKeys(diccionarioCanciones)
+    listaCanciones = getListaDeDictKeys(cancionesDict)
     listaDesordenada = desordenarLista(listaCanciones)
     # Comprobar que listaDesordenada es realmente
     # una lista desordenada de listaCanciones
-    assert barricadas.barricada(listaDesordenada, listaCanciones) is True
+    assert barricadas.checkListaOutput(listaDesordenada, listaCanciones) is True
     return listaDesordenada
 
 
