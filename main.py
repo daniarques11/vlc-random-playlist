@@ -24,7 +24,7 @@ def ejecutarVLC(vlcRuta, stringRutas):
     os.popen(comandoCMD)
 
 
-vlcRuta = '"C:\\Program Files (x86)\\VideoLAN\\VLC\\vlc"'
+vlcRuta = '"C:/Program Files (x86)/VideoLAN/VLC/vlc"'
 libreria = "libraryP.xml"
 listaRutas = getListaRutasRandom(libreria)
 stringRutas = getStringRutas(listaRutas)
