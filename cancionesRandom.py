@@ -1,6 +1,6 @@
 import random
-import barricadas
-from barricadas import checkListaOutput as checkOutput
+from checkOutput import *
+from checkOutput import checkListaOutput as checkOutput
 
 
 def cancionesRandom(cancionesDict):
