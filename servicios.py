@@ -7,7 +7,7 @@ from os import access, F_OK, popen
 
 
 def ejecutarVLC(vlcRuta, listaCanciones):
-    verificarVLC(vlcRuta)
+    verificarRutaVLC(vlcRuta)
     stringRutas = getStringRutas(listaCanciones)
     comandoCMD = vlcRuta + " " + stringRutas + "--play-and-exit"
     popen(comandoCMD)
@@ -18,16 +18,16 @@ def getStringRutas(listaRutas):
     rutasNoValidas = ""
     for ruta in listaRutas:
         if access(ruta, F_OK):
-            stringResultado = stringResultado + '"' + ruta + '" '
+            stringResultado += '"' + ruta + '" '
         else:
-            rutasNoValidas += ruta + " "
+            rutasNoValidas += "\n" + ruta
 
     if rutasNoValidas != "":
-        print("Las rutas: " + rutasNoValidas + "no existe en el directorio")
+        print("Las siguientes rutas de canciones no existen:" + rutasNoValidas)
     return stringResultado
 
 
-def verificarVLC(ruta):
+def verificarRutaVLC(ruta):
     if not access(ruta[1:-1], F_OK):
-        print("El programa VLC no se encuentra en esta ruta")
+        print("El programa VLC no se encuentra en " + ruta[1:-1] + ".")
         exit()
