@@ -8,8 +8,7 @@ def main():
     libreria = "libraryP.xml"
     diccionarioRutas = parsear(libreria)
     listaRandom = cancionesRandom(diccionarioRutas)
-    stringRutas = getStringRutas(listaRandom)
-    ejecutarVLC(vlcRuta, stringRutas)
+    ejecutarVLC(vlcRuta, listaRandom)
 
 
 main()
