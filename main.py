@@ -6,8 +6,8 @@ from cancionesRandom import *
 def main():
     vlcRuta = '"C:/Program Files (x86)/VideoLAN/VLC/vlc"'
     libreria = "libraryP.xml"
-    diccionarioRutas = parsear(libreria)
-    listaRandom = cancionesRandom(diccionarioRutas)
+    diccionarioRutas = getDiccionarioRutas(libreria)
+    listaRandom = getCancionesRandom(diccionarioRutas)
     ejecutarVLC(vlcRuta, listaRandom)
 
 

@@ -3,7 +3,7 @@ from checkOutput import *
 from checkOutput import checkListaOutput as checkOutput
 
 
-def cancionesRandom(cancionesDict):
+def getCancionesRandom(cancionesDict):
     assert isinstance(cancionesDict, dict) is True
     # Assert para comprobar si la entrada es un diccionario
 

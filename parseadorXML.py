@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 import types
 
 
-def parsear(libreriaXML):
+def getDiccionarioRutas(libreriaXML):
     try:
         tree = ET.parse(libreriaXML)
     except FileNotFoundError:

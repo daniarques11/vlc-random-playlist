@@ -1,5 +1,5 @@
-from parseadorXML import parsear
-from cancionesRandom import cancionesRandom
+from parseadorXML import getDiccionarioRutas
+from cancionesRandom import getCancionesRandom
 import os
 
 # Obtener diccionario con rutas como keys, e id como valores
