@@ -1,6 +1,6 @@
 import random
 import barricadas
-from barricadas import checkListaOutput as Check
+from barricadas import checkListaOutput as checkOutput
 
 
 def cancionesRandom(cancionesDict):
@@ -11,7 +11,7 @@ def cancionesRandom(cancionesDict):
     listaDesordenada = desordenarLista(listaCanciones)
     # Comprobar que listaDesordenada es realmente
     # una lista desordenada de listaCanciones
-    assert Check(listaDesordenada, listaCanciones) is True
+    assert checkOutput(listaDesordenada, listaCanciones) is True
     return listaDesordenada
 
 
@@ -29,5 +29,6 @@ def desordenarLista(lista):
     while listaCopia != []:
         numeroRandom = random.randint(0, len(listaCopia) - 1)
         # quitar un elemento de lista y meterlo al final de listaDesordenada
-        listaDesordenada.append(listaCopia.pop(numeroRandom))
+        elementoRandom = listaCopia.pop(numeroRandom)
+        listaDesordenada.append(elementoRandom)
     return listaDesordenada
