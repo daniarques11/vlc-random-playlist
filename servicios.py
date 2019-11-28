@@ -12,8 +12,24 @@ def ejecutarVLC(vlcRuta, listaCanciones):
     os.popen(comandoCMD)
 
 
-def getStringRutas(lista):
+def getStringRutas(listaRutas):
     stringResultado = ''
-    for elemento in lista:
-        stringResultado = stringResultado + '"' + elemento + '" '
+    rutasNoValidas = ""
+    for ruta in listaRutas:
+        if os.access(ruta, os.F_OK):
+            stringResultado = stringResultado + '"' + ruta + '" '
+        else:
+            rutasNoValidas += ruta + " "
+
+    if rutasNoValidas != "":
+        print("Las rutas: " + rutasNoValidas + "no existe en el directorio")
     return stringResultado
+
+
+def verificarVLC(vlcRuta):
+    try:
+        assert (os.access(vlcRuta, os.F_OK)) is True
+    except:
+        print("El programa VLC no se encuentra en esta ruta")
+        exit()
+
