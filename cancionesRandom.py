@@ -1,5 +1,6 @@
 import random
 import barricadas
+from barricadas import checkListaOutput as Check
 
 
 def cancionesRandom(cancionesDict):
@@ -10,7 +11,7 @@ def cancionesRandom(cancionesDict):
     listaDesordenada = desordenarLista(listaCanciones)
     # Comprobar que listaDesordenada es realmente
     # una lista desordenada de listaCanciones
-    assert barricadas.checkListaOutput(listaDesordenada, listaCanciones) is True
+    assert Check(listaDesordenada, listaCanciones) is True
     return listaDesordenada
 
 
