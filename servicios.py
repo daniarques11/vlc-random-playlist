@@ -5,13 +5,6 @@ import os
 # Obtener diccionario con rutas como keys, e id como valores
 # para luego devolver lista con rutas random
 
-
-def getListaRutasRandom(libreria):
-    diccionarioRutas = parsear(libreria)
-    listaRandom = cancionesRandom(diccionarioRutas)
-    return listaRandom
-
-
 def getStringRutas(lista):
     stringResultado = ''
     for elemento in lista:
