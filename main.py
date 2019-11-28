@@ -6,3 +6,5 @@ def main():
     listaRutas = getListaRutasRandom(libreria)
     stringRutas = getStringRutas(listaRutas)
     ejecutarVLC(vlcRuta, stringRutas)
+
+
