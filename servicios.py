@@ -1,5 +1,3 @@
-from parseadorXML import getDiccionarioRutas
-from cancionesRandom import getCancionesRandom
 from os import access, F_OK, popen
 
 # Obtener diccionario con rutas como keys, e id como valores
