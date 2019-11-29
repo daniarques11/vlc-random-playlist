@@ -4,3 +4,5 @@ ProyectoVLC/Videos/
 Repte_Alumne_Projecte_VLC.docx
 Musica/
 libreriaMusica.xml
+_pycache_
+.pytest_cache
