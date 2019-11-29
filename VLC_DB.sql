@@ -7,9 +7,7 @@ USE VLC;
 CREATE TABLE Artists (
     id VARCHAR(10) NOT NULL,
     name VARCHAR(50) NOT NULL,
-    id_band VARCHAR(10),
     PRIMARY KEY (id),
-    FOREIGN KEY (id_band) REFERENCES Artists (id)
 ) engine = InnoDB;
 
 CREATE TABLE Band_Artists (
@@ -105,25 +103,25 @@ CREATE TABLE Track_Artists (
 insert into
     Artists
 values
-    ('CAT102', 'Manel', NULL),
-    ('CAT123', 'Guillem Gisbert Puig', 'CAT102'),
-    ('CAT219', 'Martí Maymo Tomàs', 'CAT102'),
-    ('CAT432', 'Roger Padilla Gutiérrez', 'CAT102'),
-    ('CAT541', 'Arnau Vallvé Socies', 'CAT102'),
-    ('US832091', 'Foreigner', NULL),
-    ('US44349', 'Lou Gramm', 'US832091'),
-    ('EN28921', 'Mick Jones', 'US832091'),
-    ('EN8973', 'Ian McDonald', 'US832091'),
-    ('US2481240', 'Al Greenwood', 'US832091'),
-    ('US2314553', 'Ed Gagliardi', 'US832091'),
-    ('EN21245', 'Dennis Elliott', 'US832091'),
-    ('US92113442', 'Imagine Dragons', NULL),
-    ('US9844239', 'Dan Reynolds', 'US92113442'),
-    ('US9924780', 'Wayne Sermon', 'US92113442'),
-    ('US10233120', 'Ben McKee', 'US92113442'),
-    ('US24432101', 'Daniel Platzman', 'US92113442'),
-    ('US90034511', 'John Hill', NULL),
-    ('ES7521', 'Antonio Flores', NULL);
+    ('CAT102', 'Manel'),
+    ('CAT123', 'Guillem Gisbert Puig'),
+    ('CAT219', 'Martí Maymo Tomàs'),
+    ('CAT432', 'Roger Padilla Gutiérrez'),
+    ('CAT541', 'Arnau Vallvé Socies'),
+    ('US832091', 'Foreigner'),
+    ('US44349', 'Lou Gramm'),
+    ('EN28921', 'Mick Jones'),
+    ('EN8973', 'Ian McDonald'),
+    ('US2481240', 'Al Greenwood'),
+    ('US2314553', 'Ed Gagliardi'),
+    ('EN21245', 'Dennis Elliott'),
+    ('US92113442', 'Imagine Dragons'),
+    ('US9844239', 'Dan Reynolds'),
+    ('US9924780', 'Wayne Sermon'),
+    ('US10233120', 'Ben McKee'),
+    ('US24432101', 'Daniel Platzman'),
+    ('US90034511', 'John Hill'),
+    ('ES7521', 'Antonio Flores');
 
 insert into
     Band_Artists
@@ -159,15 +157,15 @@ values
 insert into
     Media_Types
 values
-    (1, 'mp3'),
-    (2, 'wma'),
-    (3, 'wmv'),
-    (4, 'mp4'),
-    (5, 'midi');
-
-insert into
-    Genres
-values
+    (1, 'mp3'),ç`´
+    (2, 'wma'),ç`´
+    (3, 'wmv'),ç`´
+    (4, 'mp4'),ç`´
+    (5, 'midi');ç`´
+ç`´
+insert intoç`´
+    Genresç`´
+valuesç`´
     (15, 'Indie-pop'),
     (1, 'Rock'),
     (12, 'Pop Rock'),
