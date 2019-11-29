@@ -10,7 +10,7 @@ def getDiccionarioRutas(libreriaXML):
               ", comprueba que la ruta del archivo coincide con la ruta de la variable libreria en main.py")
         exit()
     except:
-        print("La variable libreria en main.py no es un archivo XML")
+        print("La variable libreria en main.py no es un archivo XML (como cadena de caracteres)")
         exit()
     else:
         root = tree.getroot()
