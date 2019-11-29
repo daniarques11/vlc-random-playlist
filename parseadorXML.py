@@ -1,5 +1,4 @@
 import xml.etree.ElementTree as ET
-import types
 
 
 def getDiccionarioRutas(libreriaXML):
