@@ -1,5 +1,4 @@
-from parseadorXML import getDiccionarioRutas as getDic
-import pytest
+from parseadorXML import getDiccionarioRutas as getDicS
 
 
 def test_fileNotFoundXML():
