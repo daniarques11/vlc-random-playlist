@@ -1,6 +1,6 @@
-from servicios import *
-from parseadorXML import *
-from cancionesRandom import *
+from invocarVLC import *
+from accesoXML import *
+from logica import *
 
 
 def main():

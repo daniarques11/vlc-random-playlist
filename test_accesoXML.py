@@ -1,4 +1,4 @@
-from parseadorXML import getDiccionarioRutas as getDicS
+from accesoXML import getDiccionarioRutas as getDicS
 
 
 def test_fileNotFoundXML():
