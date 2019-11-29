@@ -1,4 +1,0 @@
-{
-  "test_servicios.py::test_getStringRutasCancionesCorrectas": true,
-  "test_servicios.py::test_getStringRutasCancionesUnaIncorrecta": true
-}
