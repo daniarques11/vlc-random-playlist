@@ -1,3 +1,3 @@
 {
-  "test_parseadorXML.py::test_correctoXML": true
+  "test_parseadorXML.py::test_fileNotFoundXML": true
 }
