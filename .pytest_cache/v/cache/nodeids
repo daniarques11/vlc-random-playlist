@@ -1,8 +1,4 @@
 [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 5f5e70a0bed7342a84bbcf45023af7f94219b729
   "test_barricadas.py::test_barricadaListasCorrectas",
   "test_barricadas.py::test_barricadaListasIncorrectas",
   "test_barricadas.py::test_mismaLongitudListas",
@@ -11,13 +7,7 @@
   "test_barricadas.py::test_countCancionesOutputEsDiferenteInput",
   "test_barricadas.py::test_integridadCorrecto",
   "test_barricadas.py::test_integridadIncorrecto",
-<<<<<<< HEAD
+  "test_parseadorXML.py::test_fileNotFoundXML",
   "test_servicios.py::test_getStringRutasCancionesCorrectas",
   "test_servicios.py::test_getStringRutasCancionesUnaIncorrecta"
-=======
-  "test_parseadorXML.py::test_correctoXML"
->>>>>>> 929af16ff3055da6160e481292898e6804760a97
-=======
-  "test_parseadorXML.py::test_fileNotFoundXML"
->>>>>>> 5f5e70a0bed7342a84bbcf45023af7f94219b729
 ]

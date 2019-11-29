@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-{}
-=======
 {
-<<<<<<< HEAD
-  "test_parseadorXML.py::test_correctoXML": true
+  "test_servicios.py::test_getStringRutasCancionesCorrectas": true,
+  "test_servicios.py::test_getStringRutasCancionesUnaIncorrecta": true
 }
->>>>>>> 929af16ff3055da6160e481292898e6804760a97
-=======
-  "test_parseadorXML.py::test_fileNotFoundXML": true
-}
->>>>>>> 5f5e70a0bed7342a84bbcf45023af7f94219b729

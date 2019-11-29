@@ -20,4 +20,5 @@ def getDiccionarioRutas(libreriaXML):
             for tracks in libreriaXML:
                 for track in tracks.findall("track"):
                     cancionesDict[track.attrib['ruta']] = track.attrib['id']
+        print(cancionesDict)
         return cancionesDict
