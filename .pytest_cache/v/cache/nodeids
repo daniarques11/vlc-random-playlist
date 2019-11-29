@@ -6,5 +6,7 @@
   "test_barricadas.py::test_countCancionesOutputEsIgualInput",
   "test_barricadas.py::test_countCancionesOutputEsDiferenteInput",
   "test_barricadas.py::test_integridadCorrecto",
-  "test_barricadas.py::test_integridadIncorrecto"
+  "test_barricadas.py::test_integridadIncorrecto",
+  "test_servicios.py::test_getStringRutasCancionesCorrectas",
+  "test_servicios.py::test_getStringRutasCancionesUnaIncorrecta"
 ]
