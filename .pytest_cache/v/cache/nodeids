@@ -1,4 +1,5 @@
 [
+<<<<<<< HEAD
   "test_barricadas.py::test_barricadaListasCorrectas",
   "test_barricadas.py::test_barricadaListasIncorrectas",
   "test_barricadas.py::test_mismaLongitudListas",
@@ -9,4 +10,7 @@
   "test_barricadas.py::test_integridadIncorrecto",
   "test_servicios.py::test_getStringRutasCancionesCorrectas",
   "test_servicios.py::test_getStringRutasCancionesUnaIncorrecta"
+=======
+  "test_parseadorXML.py::test_correctoXML"
+>>>>>>> 929af16ff3055da6160e481292898e6804760a97
 ]

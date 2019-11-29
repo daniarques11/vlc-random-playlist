@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 {}
+=======
+{
+  "test_parseadorXML.py::test_correctoXML": true
+}
+>>>>>>> 929af16ff3055da6160e481292898e6804760a97
