@@ -24,7 +24,6 @@ def getStringRutas(listaRutas):
 
     if rutasNoValidas != "":
         print("Las siguientes rutas de canciones no existen:" + rutasNoValidas)
-    print(stringResultado)
     return stringResultado
 
 
