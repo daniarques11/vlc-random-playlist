@@ -27,7 +27,8 @@ def getStringRutas(listaRutas):
 
 def verificarRutaVLC(ruta):
     if not isinstance(ruta, str):
-        print("La variable rutaVLC tiene que ser una ruta valida (una cadena de caracteres)")
+        print("La variable rutaVLC tiene que ser una ruta valida " +
+              "(una cadena de caracteres)")
         exit()
     if not access(ruta[1:-1], F_OK):
         print("El programa VLC no se encuentra en " + ruta[1:-1] + ".")
