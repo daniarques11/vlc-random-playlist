@@ -1,8 +1,5 @@
 from os import access, F_OK, popen
 
-# Obtener diccionario con rutas como keys, e id como valores
-# para luego devolver lista con rutas random
-
 
 def ejecutarVLC(vlcRuta, listaCanciones):
     verificarRutaVLC(vlcRuta)
