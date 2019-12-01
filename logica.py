@@ -27,7 +27,6 @@ def getListaAPartirDeKeys(diccionario):
 
 def desordenarLista(lista):
     listaCopia = lista[:]
-    assert listaCopia is not lista
     listaDesordenada = []
     while listaCopia != []:
         numeroRandom = random.randint(0, len(listaCopia) - 1)
