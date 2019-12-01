@@ -4,10 +4,10 @@ from checkOutput import checkListaOutput as checkOutput
 
 
 def getCancionesRandom(cancionesDict):
-    assert isinstance(cancionesDict, dict) is True
     # Assert para comprobar si la entrada es un diccionario
+    assert isinstance(cancionesDict, dict) is True
 
-    listaCanciones = getListaDeDictKeys(cancionesDict)
+    listaCanciones = getListaAPartirDeKeys(cancionesDict)
     listaDesordenada = desordenarLista(listaCanciones)
     # Comprobar que listaDesordenada es realmente
     # una lista desordenada de listaCanciones
@@ -15,7 +15,7 @@ def getCancionesRandom(cancionesDict):
     return listaDesordenada
 
 
-def getListaDeDictKeys(diccionario):
+def getListaAPartirDeKeys(diccionario):
     lista = []
     for key in diccionario:
         lista.append(key)
@@ -28,7 +28,7 @@ def desordenarLista(lista):
     listaDesordenada = []
     while listaCopia != []:
         numeroRandom = random.randint(0, len(listaCopia) - 1)
-        # quitar un elemento de lista y meterlo al final de listaDesordenada
+        # Quitar un elemento de lista y meterlo al final de listaDesordenada
         elementoRandom = listaCopia.pop(numeroRandom)
         listaDesordenada.append(elementoRandom)
     return listaDesordenada

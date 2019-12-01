@@ -1,13 +1,13 @@
 [
-  "test_barricadas.py::test_barricadaListasCorrectas",
-  "test_barricadas.py::test_barricadaListasIncorrectas",
-  "test_barricadas.py::test_mismaLongitudListas",
-  "test_barricadas.py::test_diferenteLongitudListas",
-  "test_barricadas.py::test_countCancionesOutputEsIgualInput",
-  "test_barricadas.py::test_countCancionesOutputEsDiferenteInput",
-  "test_barricadas.py::test_integridadCorrecto",
-  "test_barricadas.py::test_integridadIncorrecto",
-  "test_parseadorXML.py::test_fileNotFoundXML",
-  "test_servicios.py::test_getStringRutasCancionesCorrectas",
-  "test_servicios.py::test_getStringRutasCancionesUnaIncorrecta"
+  "test_accesoXML.py::test_diccionarioDevueltoCorrectamente",
+  "test_checkOutput.py::test_barricadaListasCorrectas",
+  "test_checkOutput.py::test_barricadaListasIncorrectas",
+  "test_checkOutput.py::test_mismaLongitudListas",
+  "test_checkOutput.py::test_diferenteLongitudListas",
+  "test_checkOutput.py::test_countCancionesOutputEsIgualInput",
+  "test_checkOutput.py::test_countCancionesOutputEsDiferenteInput",
+  "test_checkOutput.py::test_integridadCorrecto",
+  "test_checkOutput.py::test_integridadIncorrecto",
+  "test_invocarVLC.py::test_getStringRutasCancionesCorrectas",
+  "test_invocarVLC.py::test_getStringRutasCancionesUnaIncorrecta"
 ]
