@@ -47,6 +47,9 @@ XSD Generado por: https://xml.mherman.org/ -->
       <xs:attribute name="id" use="required" type="xs:integer"/>
       <!-- Atributo ID para diferenciar los diferentes tacks. 
       Es requerida y tienen que ser números -->
+      <xs:attribute name="ruta" use="required"/>
+      <!-- Atributo ruta que indica la ruta de la canción en el ordenador. 
+      Es requerida -->
       <xs:attribute ref="xml:lang"/>
     </xs:complexType>
   </xs:element>
