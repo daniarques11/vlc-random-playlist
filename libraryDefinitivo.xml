@@ -190,6 +190,981 @@ Daniel Arqués Toro, Daniel Jonathan Zurita Mena
                 wmv
             </media_type>
         </track>
+        <track id="56246672" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Alegria.mp3">
+            <name>
+                Alegria
+            </name>
+            <genre id="14">
+                Rock català
+            </genre>
+            <album id="5624667">
+                <title>
+                    Alegria
+                </title>
+                <number>
+                    2
+                </number>
+                <artists>
+                    <band id="CAT832091">
+                        Antònia Font
+                        <artist id="CAT4449">
+                            <name>Jaume Manresa</name>
+                        </artist>
+                        <artist id="CAT2921">
+                            <composer/>
+                            <name>Joan Miquel Oliver </name>
+                        </artist>
+                        <artist id="CAT1921">
+                            <name>Joan Roca</name>
+                        </artist>
+                        <artist id="CAT28231">
+                            <name>Pau Debon</name>
+                        </artist>
+                        <artist id="CAT15674">
+                            <name>Pere Debon</name>
+                        </artist>
+                        <artist id="CAT55578">
+                            <name>Pere Estarellas</name>
+                        </artist>
+                    </band>
+                </artists>
+                <year>
+                    2002
+                </year>
+            </album>
+            <duration>
+                3:19
+            </duration>
+            <size type="MB">
+                3,04
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="56246696" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Extraterrestres.mp3">
+            <name>
+                Alegria
+            </name>
+            <genre id="14">
+                Rock català
+            </genre>
+            <album id="5624669">
+                <title>
+                    Taxi
+                </title>
+                <number>
+                    6
+                </number>
+                <artists>
+                    <band id="CAT832091">
+                        Antònia Font
+                        <artist id="CAT4449">
+                            <name>Jaume Manresa</name>
+                        </artist>
+                        <artist id="CAT2921">
+                            <composer/>
+                            <name>Joan Miquel Oliver </name>
+                        </artist>
+                        <artist id="CAT1921">
+                            <name>Joan Roca</name>
+                        </artist>
+                        <artist id="CAT28231">
+                            <name>Pau Debon</name>
+                        </artist>
+                        <artist id="CAT15674">
+                            <name>Pere Debon</name>
+                        </artist>
+                        <artist id="CAT55578">
+                            <name>Pere Estarellas</name>
+                        </artist>
+                    </band>
+                </artists>
+                <year>
+                    2004
+                </year>
+            </album>
+            <duration>
+                3:28
+            </duration>
+            <size type="MB">
+                3,38
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="1444567172" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Bliss.mp3">
+            <name>
+                Bliss
+            </name>
+            <genre id="15">
+                Alternative rock
+            </genre>
+            <album id="144456717">
+                <title>
+                    Origin of Symmetry
+                </title>
+                <number>
+                    2
+                </number>
+                <artists>
+                    <band id="EN48484859">
+                        Muse
+                        <artist id="EN42142566">
+                            <composer/>
+                            <name>Matt Bellamy</name>
+                        </artist>
+                        <artist id="EN4214336">
+                            <name>Dominic Howard</name>
+                        </artist>
+                        <artist id="EN42353666">
+                            <name>Chris Wolstenholme</name>
+                        </artist>
+                    </band>
+                </artists>
+                <year>
+                    2001
+                </year>
+            </album>
+            <duration>
+                4:12
+            </duration>
+            <size type="MB">
+                3,86
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="1444567175" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Plug in Baby.mp3">
+            <name>
+                Plug in Baby
+            </name>
+            <genre id="15">
+                Alternative rock
+            </genre>
+            <album id="144456717">
+                <title>
+                    Origin of Symmetry
+                </title>
+                <number>
+                    5
+                </number>
+                <artists>
+                    <band id="EN48484859">
+                        Muse
+                        <artist id="EN42142566">
+                            <composer/>
+                            <name>Matt Bellamy</name>
+                        </artist>
+                        <artist id="EN4214336">
+                            <name>Dominic Howard</name>
+                        </artist>
+                        <artist id="EN42353666">
+                            <name>Chris Wolstenholme</name>
+                        </artist>
+                    </band>
+                </artists>
+                <year>
+                    2001
+                </year>
+            </album>
+            <duration>
+                3:40
+            </duration>
+            <size type="MB">
+                3,36
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="1444567078" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Hysteria.mp3">
+            <name>
+                Hysteria
+            </name>
+            <genre id="15">
+                Alternative rock
+            </genre>
+            <album id="144456707">
+                <title>
+                    Absolution
+                </title>
+                <number>
+                    8
+                </number>
+                <artists>
+                    <band id="EN48484859">
+                        Muse
+                        <artist id="EN42142566">
+                            <composer/>
+                            <name>Matt Bellamy</name>
+                        </artist>
+                        <artist id="EN4214336">
+                            <name>Dominic Howard</name>
+                        </artist>
+                        <artist id="EN42353666">
+                            <name>Chris Wolstenholme</name>
+                        </artist>
+                    </band>
+                </artists>
+                <year>
+                    2003
+                </year>
+            </album>
+            <duration>
+                3:47
+            </duration>
+            <size type="MB">
+                3,48
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="1444567073" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Time Is Running Out.mp3">
+            <name>
+                Time Is Running Out
+            </name>
+            <genre id="15">
+                Alternative rock
+            </genre>
+            <album id="144456707">
+                <title>
+                    Absolution
+                </title>
+                <number>
+                    3
+                </number>
+                <artists>
+                    <band id="EN48484859">
+                        Muse
+                        <artist id="EN42142566">
+                            <composer/>
+                            <name>Matt Bellamy</name>
+                        </artist>
+                        <artist id="EN4214336">
+                            <name>Dominic Howard</name>
+                        </artist>
+                        <artist id="EN42353666">
+                            <name>Chris Wolstenholme</name>
+                        </artist>
+                    </band>
+                </artists>
+                <year>
+                    2003
+                </year>
+            </album>
+            <duration>
+                3:56
+            </duration>
+            <size type="MB">
+                3,61
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="1444567211" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Uprising.mp3">
+            <name>
+                Uprising
+            </name>
+            <genre id="15">
+                Alternative rock
+            </genre>
+            <album id="144456721">
+                <title>
+                    The Resistance
+                </title>
+                <number>
+                    1
+                </number>
+                <artists>
+                    <band id="EN48484859">
+                        Muse
+                        <artist id="EN42142566">
+                            <composer/>
+                            <name>Matt Bellamy</name>
+                        </artist>
+                        <artist id="EN4214336">
+                            <name>Dominic Howard</name>
+                        </artist>
+                        <artist id="EN42353666">
+                            <name>Chris Wolstenholme</name>
+                        </artist>
+                    </band>
+                </artists>
+                <year>
+                    2009
+                </year>
+            </album>
+            <duration>
+                5:02
+            </duration>
+            <size type="MB">
+                11,6
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="1444567214" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\United States of Eurasia.mp3">
+            <name>
+                United States of Eurasia
+            </name>
+            <genre id="15">
+                Alternative rock
+            </genre>
+            <album id="144456721">
+                <title>
+                    The Resistance
+                </title>
+                <number>
+                    4
+                </number>
+                <artists>
+                    <band id="EN48484859">
+                        Muse
+                        <artist id="EN42142566">
+                            <composer/>
+                            <name>Matt Bellamy</name>
+                        </artist>
+                        <artist id="EN4214336">
+                            <name>Dominic Howard</name>
+                        </artist>
+                        <artist id="EN42353666">
+                            <name>Chris Wolstenholme</name>
+                        </artist>
+                    </band>
+                </artists>
+                <year>
+                    2009
+                </year>
+            </album>
+            <duration>
+                5:47
+            </duration>
+            <size type="MB">
+                13,7
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="1444567215" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Guiding Light.mp3">
+            <name>
+                Guiding Light
+            </name>
+            <genre id="15">
+                Alternative rock
+            </genre>
+            <album id="144456721">
+                <title>
+                    The Resistance
+                </title>
+                <number>
+                    5
+                </number>
+                <artists>
+                    <band id="EN48484859">
+                        Muse
+                        <artist id="EN42142566">
+                            <composer/>
+                            <name>Matt Bellamy</name>
+                        </artist>
+                        <artist id="EN4214336">
+                            <name>Dominic Howard</name>
+                        </artist>
+                        <artist id="EN42353666">
+                            <name>Chris Wolstenholme</name>
+                        </artist>
+                    </band>
+                </artists>
+                <year>
+                    2009
+                </year>
+            </album>
+            <duration>
+                4:13
+            </duration>
+            <size type="MB">
+                9,79
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="1444567216" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Unnatural Selection.mp3">
+            <name>
+                Unnatural Selection
+            </name>
+            <genre id="15">
+                Alternative rock
+            </genre>
+            <album id="144456721">
+                <title>
+                    The Resistance
+                </title>
+                <number>
+                    6
+                </number>
+                <artists>
+                    <band id="EN48484859">
+                        Muse
+                        <artist id="EN42142566">
+                            <composer/>
+                            <name>Matt Bellamy</name>
+                        </artist>
+                        <artist id="EN4214336">
+                            <name>Dominic Howard</name>
+                        </artist>
+                        <artist id="EN42353666">
+                            <name>Chris Wolstenholme</name>
+                        </artist>
+                    </band>
+                </artists>
+                <year>
+                    2009
+                </year>
+            </album>
+            <duration>
+                6:55
+            </duration>
+            <size type="MB">
+                15,9
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="1444567218" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\I Belong to You.mp3">
+            <name>
+                I Belong to You
+            </name>
+            <genre id="15">
+                Alternative rock
+            </genre>
+            <album id="144456721">
+                <title>
+                    The Resistance
+                </title>
+                <number>
+                    8
+                </number>
+                <artists>
+                    <band id="EN48484859">
+                        Muse
+                        <artist id="EN42142566">
+                            <composer/>
+                            <name>Matt Bellamy</name>
+                        </artist>
+                        <artist id="EN4214336">
+                            <name>Dominic Howard</name>
+                        </artist>
+                        <artist id="EN42353666">
+                            <name>Chris Wolstenholme</name>
+                        </artist>
+                    </band>
+                </artists>
+                <year>
+                    2009
+                </year>
+            </album>
+            <duration>
+                5:38
+            </duration>
+            <size type="MB">
+                13,0
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="14445672113" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Supermassive Black Hole.mp3">
+            <name>
+                Supermassive Black Hole
+            </name>
+            <genre id="15">
+                Alternative rock
+            </genre>
+            <album id="1444567211">
+                <title>
+                    Black Holes and Revelations
+                </title>
+                <number>
+                    3
+                </number>
+                <artists>
+                    <band id="EN48484859">
+                        Muse
+                        <artist id="EN42142566">
+                            <composer/>
+                            <name>Matt Bellamy</name>
+                        </artist>
+                        <artist id="EN4214336">
+                            <name>Dominic Howard</name>
+                        </artist>
+                        <artist id="EN42353666">
+                            <name>Chris Wolstenholme</name>
+                        </artist>
+                    </band>
+                </artists>
+                <year>
+                    2005
+                </year>
+            </album>
+            <duration>
+                3:29
+            </duration>
+            <size type="MB">
+                6,45
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="14445672112" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Starlight.mp3">
+            <name>
+                Starlight
+            </name>
+            <genre id="15">
+                Alternative rock
+            </genre>
+            <album id="1444567211">
+                <title>
+                    Black Holes and Revelations
+                </title>
+                <number>
+                    2
+                </number>
+                <artists>
+                    <band id="EN48484859">
+                        Muse
+                        <artist id="EN42142566">
+                            <composer/>
+                            <name>Matt Bellamy</name>
+                        </artist>
+                        <artist id="EN4214336">
+                            <name>Dominic Howard</name>
+                        </artist>
+                        <artist id="EN42353666">
+                            <name>Chris Wolstenholme</name>
+                        </artist>
+                    </band>
+                </artists>
+                <year>
+                    2005
+                </year>
+            </album>
+            <duration>
+                3:59
+            </duration>
+            <size type="MB">
+                7,37
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="144456721111" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Knights Of Cydonia.mp3">
+            <name>
+                Knights Of Cydonia
+            </name>
+            <genre id="15">
+                Alternative rock
+            </genre>
+            <album id="1444567211">
+                <title>
+                    Black Holes and Revelations
+                </title>
+                <number>
+                    11
+                </number>
+                <artists>
+                    <band id="EN48484859">
+                        Muse
+                        <artist id="EN42142566">
+                            <composer/>
+                            <name>Matt Bellamy</name>
+                        </artist>
+                        <artist id="EN4214336">
+                            <name>Dominic Howard</name>
+                        </artist>
+                        <artist id="EN42353666">
+                            <name>Chris Wolstenholme</name>
+                        </artist>
+                    </band>
+                </artists>
+                <year>
+                    2005
+                </year>
+            </album>
+            <duration>
+                6:01
+            </duration>
+            <size type="MB">
+                7,69
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="224566771012" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Don't Stop Me Now.mp3">
+            <name>
+                Don't Stop Me Now
+            </name>
+            <genre id="25">
+                Hard rock
+            </genre>
+            <album id="2245667710">
+                <title>
+                    Jazz
+                </title>
+                <number>
+                    12
+                </number>
+                <artists>
+                    <band id="EN2178900">
+                        Queen
+                        <artist id="EN21781566">
+                            <composer/>
+                            <name>Freddie Mercury</name>
+                        </artist>
+                        <artist id="EN21345900">
+                            <composer/>
+                            <name>Brian May</name>
+                        </artist>
+                        <artist id="EN232900">
+                            <composer/>
+                            <name>Roger Taylor</name>
+                        </artist>
+                        <artist id="EN23267700">
+                            <composer/>
+                            <name>John Deacon</name>
+                        </artist>
+                    </band>
+                </artists>
+                <year>
+                    1978
+                </year>
+            </album>
+            <duration>
+                3:36
+            </duration>
+            <size type="MB">
+                3,30
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="26788909011" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Bohemian Rhapsody.mp3">
+            <name>
+                Bohemian Rhapsody
+            </name>
+            <genre id="25">
+                Hard rock
+            </genre>
+            <album id="267889090">
+                <title>
+                    A Night at the Opera
+                </title>
+                <number>
+                    11
+                </number>
+                <artists>
+                    <band id="EN2178900">
+                        Queen
+                        <artist id="EN21781566">
+                            <composer/>
+                            <name>Freddie Mercury</name>
+                        </artist>
+                        <artist id="EN21345900">
+                            <composer/>
+                            <name>Brian May</name>
+                        </artist>
+                        <artist id="EN232900">
+                            <composer/>
+                            <name>Roger Taylor</name>
+                        </artist>
+                        <artist id="EN23267700">
+                            <composer/>
+                            <name>John Deacon</name>
+                        </artist>
+                    </band>
+                </artists>
+                <year>
+                    1978
+                </year>
+            </album>
+            <duration>
+                6:07
+            </duration>
+            <size type="MB">
+                5,60
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="16486" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\My Way.mp3">
+            <name>
+                My way
+            </name>
+            <genre id="45">
+                Traditional pop
+            </genre>
+            <album id="1648">
+                <title>
+                    My Way
+                </title>
+                <number>
+                    6
+                </number>
+                <artists>
+                    <artist id="US11344">
+                        <composer/>
+                        <name>Frank Sinatra</name>
+                    </artist>
+                </artists>
+                <year>
+                    1969
+                </year>
+            </album>
+            <duration>
+                4:36
+            </duration>
+            <size type="MB">
+                4,21
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="1794125" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\New York, New York.mp3">
+            <name>
+                Theme from New York, New York
+            </name>
+            <genre id="45">
+                Traditional pop
+            </genre>
+            <album id="1794">
+                <title>
+                    Trilogy: Past Present Future
+                </title>
+                <number>
+                    Disc 1, Part 2, 5
+                </number>
+                <artists>
+                    <artist id="US11344">
+                        <composer/>
+                        <name>Frank Sinatra</name>
+                    </artist>
+                </artists>
+                <year>
+                    1980
+                </year>
+            </album>
+            <duration>
+                3:26
+            </duration>
+            <size type="MB">
+                3.15
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="189921" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Benvolgut.mp3"> 
+            <name>
+                Benvolgut
+            </name>
+            <genre id="15">
+                Indie-pop
+            </genre>
+            <album id="18992">
+                <title>
+                    10 milles per veure una bona armadura
+                </title>
+                <number>
+                    1
+                </number>
+                <artists>
+                    <band id="CAT102">
+                        Manel
+                        <artist id="CAT123">
+                            <composer/>
+                            <name>Guillem Gisbert Puig</name>
+                        </artist>
+                        <artist id="CAT219">
+                            <name>Martí Maymó Tomàs</name>
+                        </artist>
+                        <artist id="CAT432">
+                            <name>Roger Padilla Gutiérrez</name>
+                        </artist>
+                        <artist id="CAT541">
+                            <name>Arnau Vallvé Socies</name>
+                        </artist>
+                    </band>
+                </artists>
+                <year>
+                    2011
+                </year>
+            </album>
+            <duration>
+                4:15
+            </duration>
+            <size type="MB">
+                3,89
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="8423212" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Camins.mp3"> 
+            <name>
+                Camins
+            </name>
+            <genre id="14">
+                Rock català
+            </genre>
+            <album id="84232">
+                <title>
+                    Bona nit malparits!
+                </title>
+                <number>
+                    12
+                </number>
+                <artists>
+                    <band id="CAT102">
+                        Sopa de cabra
+                        <artist id="CAT11">
+                            <composer/>
+                            <name>Gerard Quintana</name>
+                        </artist>
+                        <artist id="CAT12">
+                            <name>Josep Thió</name>
+                        </artist>
+                        <artist id="CAT13">
+                            <name>Francesc "Cuco" Lisicic</name>
+                        </artist>
+                        <artist id="CAT16">
+                            <name>Josep Bosch</name>
+                        </artist>
+                        <artist id="CAT14">
+                            <name>Jaume Soler "Peck"</name>
+                        </artist>
+                        <artist id="CAT15">
+                            <name>Eduard Font</name>
+                        </artist>
+                    </band>
+                </artists>
+                <year>
+                    2002
+                </year>
+            </album>
+            <duration>
+                3:18
+            </duration>
+            <size type="MB">
+                1,52
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="563211334" xml:lang="de" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Keine Lust.mp3"> 
+            <name>
+                Keine Lust
+            </name>
+            <genre id="102">
+                Neue Deutsche Härte
+            </genre>
+            <album id="56321133">
+                <title>
+                    Reise, Reise
+                </title>
+                <number>
+                    4
+                </number>
+                <artists>
+                    <band id="DE349">
+                        Sopa de cabra
+                        <artist id="DE349">
+                            <composer/>
+                            <name>Till Lindemann</name>
+                        </artist>
+                        <artist id="DE349">
+                            <composer/>
+                            <name>Richard Z. Kruspe</name>
+                        </artist>
+                        <artist id="DE350">
+                            <composer/>
+                            <name>Paul Landers</name>
+                        </artist>
+                        <artist id="DE351">
+                            <composer/>
+                            <name>Oliver Riedel</name>
+                        </artist>
+                        <artist id="DE352">
+                            <composer/>
+                            <name>Christoph Schneider</name>
+                        </artist>
+                        <artist id="DE359">
+                            <composer/>
+                            <name>Christian "Flake" Lorenz</name>
+                        </artist>
+                    </band>
+                </artists>
+                <year>
+                    2004
+                </year>
+            </album>
+            <duration>
+                3:42
+            </duration>
+            <size type="MB">
+                6,76
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="78455342" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Baby Jane.mp3">
+            <name>
+                Baby Jane
+            </name>
+            <genre id="12">
+                Pop rock
+            </genre>
+            <album id="7845534">
+                <title>
+                    Body Wishes
+                </title>
+                <number>
+                    2
+                </number>
+                <artists>
+                    <artist id="US11344">
+                        <composer/>
+                        <name>Rod Steward</name>
+                    </artist>
+                </artists>
+                <year>
+                    1983
+                </year>
+            </album>
+            <duration>
+                4:46
+            </duration>
+            <size type="MB">
+                4,36
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
     </tracks>
     <playlists>
         <playlist id='1'>
@@ -198,7 +1173,7 @@ Daniel Arqués Toro, Daniel Jonathan Zurita Mena
             </name>
             <tracks>
                 <track>
-                    <id>938421</id> <!-- Referencia a l'atribut de l'etiqueta track id dins tracks -->
+                    <id>938421</id> <!-- Referencia a l'atribut de l'etiqueta track, id, dins tracks -->
                     <number>1</number>
                 </track>
                 <track>
