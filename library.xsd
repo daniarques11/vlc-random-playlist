@@ -6,7 +6,6 @@ XML verificado por: https://www.xmlvalidation.com y
 XSD Generado por: https://xml.mherman.org/ -->
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
   <xs:element name="library">
     <xs:complexType>
     <!-- ComplexType ya que contiene todos las ramas referentes a las dos
@@ -15,10 +14,6 @@ XSD Generado por: https://xml.mherman.org/ -->
         <xs:element ref="tracks"/>
         <xs:element ref="playlists"/>
       </xs:sequence>
-      <xs:attribute ref="xml:lang" use="required"/>
-      <!-- Atributo que contiene las siglas del idioma para dejarlo reflejado 
-      con el que se trabaja en todo el XML. Es requerida y no se define si son
-      números o letras. -->
     </xs:complexType>
   </xs:element>
   <xs:element name="tracks">
@@ -50,7 +45,6 @@ XSD Generado por: https://xml.mherman.org/ -->
       <xs:attribute name="ruta" use="required"/>
       <!-- Atributo ruta que indica la ruta de la canción en el ordenador. 
       Es requerida -->
-      <xs:attribute ref="xml:lang"/>
     </xs:complexType>
   </xs:element>
   <xs:element name="genre">
@@ -191,17 +185,5 @@ XSD Generado por: https://xml.mherman.org/ -->
     </xs:complexType>
   </xs:element>
   <xs:element name="composer">
-    <xs:complexType>
-    <!-- ComplexType ya que puede tener más elemento en el futuro -->
-      <xs:sequence>
-        <xs:element minOccurs="0" ref="name"/>
-        <!-- Se define el minimo de ocurrencias del nombre del compositor (0)
-        y hace referencia al nombre del artista  -->
-      </xs:sequence>
-      <xs:attribute name="id" type="xs:NCName"/>
-      <!-- Atributo ID para diferenciar los diferentes compositores. 
-      No es requerida y "NCName" indica que puede puede contener 
-      caracteres menos los ":" que estan prohibidos-->
-    </xs:complexType>
   </xs:element>
 </xs:schema>
