@@ -1,5 +1,6 @@
 [
-  "test_accesoXML.py::test_diccionarioDevueltoCorrectamente",
+  "test_accesoXML.py::test_diccionarioContieneMenosDe25Canciones",
+  "test_accesoXML.py::test_diccionarioContieneCancionesMinimas",
   "test_checkOutput.py::test_barricadaListasCorrectas",
   "test_checkOutput.py::test_barricadaListasIncorrectas",
   "test_checkOutput.py::test_mismaLongitudListas",

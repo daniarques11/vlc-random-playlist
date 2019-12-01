@@ -6,10 +6,12 @@ def getDiccionarioRutas(libreriaXML):
         tree = ET.parse(libreriaXML)
     except FileNotFoundError:
         print("No se ha encontrado el archivo " + libreriaXML +
-              ", comprueba que la ruta del archivo coincide con la ruta de la variable libreria en main.py")
+              ", comprueba que la ruta del archivo coincide con la ruta " +
+              "de la variable libreria en main.py")
         exit()
     except:
-        print("La variable libreria en main.py no es un archivo XML (como cadena de caracteres)")
+        print("La variable libreria en main.py no es un archivo XML " +
+              "(como cadena de caracteres)")
         exit()
     else:
         root = tree.getroot()
@@ -19,9 +21,4 @@ def getDiccionarioRutas(libreriaXML):
             for tracks in libreriaXML:
                 for track in tracks.findall("track"):
                     cancionesDict[track.attrib['ruta']] = track.attrib['id']
-        
-        if len(cancionesDict) > 25:
-            return cancionesDict
-        else:
-            print("La carpeta contiene menos de 25 canciones")
-            exit()
+        return cancionesDict

@@ -1165,6 +1165,258 @@ Daniel Arqués Toro, Daniel Jonathan Zurita Mena
                 mp3
             </media_type>
         </track>
+        <track id="654642341" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\American Idiot.mp3">
+            <name>
+                American Idiot
+            </name>
+            <genre id="12">
+                Pop rock
+            </genre>
+            <album id="654642340">
+                <title>
+                    American Idiot
+                </title>
+                <number>
+                    1
+                </number>
+                <artists>
+                    <artist id="US11334">
+                        <composer/>
+                        <name>Billie Joe Armstrong</name>
+                    </artist>
+                    <artist id="US11335">
+                        <composer/>
+                        <name>Nike Dimt</name>
+                    </artist>
+                    <artist id="US11336">
+                        <composer/>
+                        <name>Tre Cool</name>
+                    </artist>
+                </artists>
+                <year>
+                    2004
+                </year>
+            </album>
+            <duration>
+                3:02
+            </duration>
+            <size type="MB">
+                2,78
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="654642343" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Holidays.mp3">
+            <name>
+                Holidays
+            </name>
+            <genre id="12">
+                Pop rock
+            </genre>
+            <album id="654642340">
+                <title>
+                    American Idiot
+                </title>
+                <number>
+                    3
+                </number>
+                <artists>
+                    <artist id="US11334">
+                        <composer/>
+                        <name>Billie Joe Armstrong</name>
+                    </artist>
+                    <artist id="US11335">
+                        <composer/>
+                        <name>Nike Dimt</name>
+                    </artist>
+                    <artist id="US11336">
+                        <composer/>
+                        <name>Tre Cool</name>
+                    </artist>
+                </artists>
+                <year>
+                    2004
+                </year>
+            </album>
+            <duration>
+                4:41
+            </duration>
+            <size type="MB">
+                4,30
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="654642344" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Boulevard of Broken Dreams.mp3">
+            <name>
+                Boulevard of Broken Dreams
+            </name>
+            <genre id="12">
+                Pop rock
+            </genre>
+            <album id="654642340">
+                <title>
+                    American Idiot
+                </title>
+                <number>
+                    4
+                </number>
+                <artists>
+                    <artist id="US11334">
+                        <composer/>
+                        <name>Billie Joe Armstrong</name>
+                    </artist>
+                    <artist id="US11335">
+                        <composer/>
+                        <name>Nike Dimt</name>
+                    </artist>
+                    <artist id="US11336">
+                        <composer/>
+                        <name>Tre Cool</name>
+                    </artist>
+                </artists>
+                <year>
+                    2004
+                </year>
+            </album>
+            <duration>
+                4:47
+            </duration>
+            <size type="MB">
+                4,39
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="654642351" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Wake me up when September ends.mp3">
+            <name>
+                Wake me up when September ends
+            </name>
+            <genre id="12">
+                Pop rock
+            </genre>
+            <album id="654642340">
+                <title>
+                    American Idiot
+                </title>
+                <number>
+                    11
+                </number>
+                <artists>
+                    <artist id="US11334">
+                        <composer/>
+                        <name>Billie Joe Armstrong</name>
+                    </artist>
+                    <artist id="US11335">
+                        <composer/>
+                        <name>Nike Dimt</name>
+                    </artist>
+                    <artist id="US11336">
+                        <composer/>
+                        <name>Tre Cool</name>
+                    </artist>
+                </artists>
+                <year>
+                    2004
+                </year>
+            </album>
+            <duration>
+                7:12
+            </duration>
+            <size type="MB">
+                6,59
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="654642326" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\21 Guns.mp3">
+            <name>
+                21 Guns
+            </name>
+            <genre id="12">
+                Pop rock
+            </genre>
+            <album id="654642310">
+                <title>
+                    21st Century Breakdown
+                </title>
+                <number>
+                    16
+                </number>
+                <artists>
+                    <artist id="US11334">
+                        <composer/>
+                        <name>Billie Joe Armstrong</name>
+                    </artist>
+                    <artist id="US11335">
+                        <composer/>
+                        <name>Nike Dimt</name>
+                    </artist>
+                    <artist id="US11336">
+                        <composer/>
+                        <name>Tre Cool</name>
+                    </artist>
+                </artists>
+                <year>
+                    2008
+                </year>
+            </album>
+            <duration>
+                5:26
+            </duration>
+            <size type="MB">
+                4,97
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
+        <track id="654642313" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Know Your Enemy.mp3">
+            <name>
+                Know Your Enemy
+            </name>
+            <genre id="12">
+                Pop rock
+            </genre>
+            <album id="654642310">
+                <title>
+                    21st Century Breakdown
+                </title>
+                <number>
+                    3
+                </number>
+                <artists>
+                    <artist id="US11334">
+                        <composer/>
+                        <name>Billie Joe Armstrong</name>
+                    </artist>
+                    <artist id="US11335">
+                        <composer/>
+                        <name>Nike Dimt</name>
+                    </artist>
+                    <artist id="US11336">
+                        <composer/>
+                        <name>Tre Cool</name>
+                    </artist>
+                </artists>
+                <year>
+                    2008
+                </year>
+            </album>
+            <duration>
+                3:12
+            </duration>
+            <size type="MB">
+                2,93
+            </size>
+            <media_type id="1">
+                mp3
+            </media_type>
+        </track>
     </tracks>
     <playlists>
         <playlist id='1'>
@@ -1187,258 +1439,6 @@ Daniel Arqués Toro, Daniel Jonathan Zurita Mena
                 <track>
                     <id>1125556</id>
                     <number>4</number>
-                </track>
-                <track id="654642341" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\American Idiot.mp3">
-                    <name>
-                        American Idiot
-                    </name>
-                    <genre id="12">
-                        Pop rock
-                    </genre>
-                    <album id="654642340">
-                        <title>
-                            American Idiot
-                        </title>
-                        <number>
-                            1
-                        </number>
-                        <artists>
-                            <artist id="US11334">
-                                <composer/>
-                                <name>Billie Joe Armstrong</name>
-                            </artist>
-                            <artist id="US11335">
-                                <composer/>
-                                <name>Nike Dimt</name>
-                            </artist>
-                            <artist id="US11336">
-                                <composer/>
-                                <name>Tre Cool</name>
-                            </artist>
-                        </artists>
-                        <year>
-                            2004
-                        </year>
-                    </album>
-                    <duration>
-                        3:02
-                    </duration>
-                    <size type="MB">
-                        2,78
-                    </size>
-                    <media_type id="1">
-                        mp3
-                    </media_type>
-                </track>
-                <track id="654642343" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Holidays.mp3">
-                    <name>
-                        Holidays
-                    </name>
-                    <genre id="12">
-                        Pop rock
-                    </genre>
-                    <album id="654642340">
-                        <title>
-                            American Idiot
-                        </title>
-                        <number>
-                            3
-                        </number>
-                        <artists>
-                            <artist id="US11334">
-                                <composer/>
-                                <name>Billie Joe Armstrong</name>
-                            </artist>
-                            <artist id="US11335">
-                                <composer/>
-                                <name>Nike Dimt</name>
-                            </artist>
-                            <artist id="US11336">
-                                <composer/>
-                                <name>Tre Cool</name>
-                            </artist>
-                        </artists>
-                        <year>
-                            2004
-                        </year>
-                    </album>
-                    <duration>
-                        4:41
-                    </duration>
-                    <size type="MB">
-                        4,30
-                    </size>
-                    <media_type id="1">
-                        mp3
-                    </media_type>
-                </track>
-                <track id="654642344" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Boulevard of Broken Dreams.mp3">
-                    <name>
-                        Boulevard of Broken Dreams
-                    </name>
-                    <genre id="12">
-                        Pop rock
-                    </genre>
-                    <album id="654642340">
-                        <title>
-                            American Idiot
-                        </title>
-                        <number>
-                            4
-                        </number>
-                        <artists>
-                            <artist id="US11334">
-                                <composer/>
-                                <name>Billie Joe Armstrong</name>
-                            </artist>
-                            <artist id="US11335">
-                                <composer/>
-                                <name>Nike Dimt</name>
-                            </artist>
-                            <artist id="US11336">
-                                <composer/>
-                                <name>Tre Cool</name>
-                            </artist>
-                        </artists>
-                        <year>
-                            2004
-                        </year>
-                    </album>
-                    <duration>
-                        4:47
-                    </duration>
-                    <size type="MB">
-                        4,39
-                    </size>
-                    <media_type id="1">
-                        mp3
-                    </media_type>
-                </track>
-                <track id="654642351" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Wake me up when September ends.mp3">
-                    <name>
-                        Wake me up when September ends
-                    </name>
-                    <genre id="12">
-                        Pop rock
-                    </genre>
-                    <album id="654642340">
-                        <title>
-                            American Idiot
-                        </title>
-                        <number>
-                            11
-                        </number>
-                        <artists>
-                            <artist id="US11334">
-                                <composer/>
-                                <name>Billie Joe Armstrong</name>
-                            </artist>
-                            <artist id="US11335">
-                                <composer/>
-                                <name>Nike Dimt</name>
-                            </artist>
-                            <artist id="US11336">
-                                <composer/>
-                                <name>Tre Cool</name>
-                            </artist>
-                        </artists>
-                        <year>
-                            2004
-                        </year>
-                    </album>
-                    <duration>
-                        7:12
-                    </duration>
-                    <size type="MB">
-                        6,59
-                    </size>
-                    <media_type id="1">
-                        mp3
-                    </media_type>
-                </track>
-                <track id="654642326" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\21 Guns.mp3">
-                    <name>
-                        21 Guns
-                    </name>
-                    <genre id="12">
-                        Pop rock
-                    </genre>
-                    <album id="654642310">
-                        <title>
-                            21st Century Breakdown
-                        </title>
-                        <number>
-                            16
-                        </number>
-                        <artists>
-                            <artist id="US11334">
-                                <composer/>
-                                <name>Billie Joe Armstrong</name>
-                            </artist>
-                            <artist id="US11335">
-                                <composer/>
-                                <name>Nike Dimt</name>
-                            </artist>
-                            <artist id="US11336">
-                                <composer/>
-                                <name>Tre Cool</name>
-                            </artist>
-                        </artists>
-                        <year>
-                            2008
-                        </year>
-                    </album>
-                    <duration>
-                        5:26
-                    </duration>
-                    <size type="MB">
-                        4,97
-                    </size>
-                    <media_type id="1">
-                        mp3
-                    </media_type>
-                </track>
-                <track id="654642313" xml:lang="en" ruta="C:\Users\Thelpher\Desktop\DAW 1r\VLC Projecte\Musica\Know Your Enemy.mp3">
-                    <name>
-                        Know Your Enemy
-                    </name>
-                    <genre id="12">
-                        Pop rock
-                    </genre>
-                    <album id="654642310">
-                        <title>
-                            21st Century Breakdown
-                        </title>
-                        <number>
-                            3
-                        </number>
-                        <artists>
-                            <artist id="US11334">
-                                <composer/>
-                                <name>Billie Joe Armstrong</name>
-                            </artist>
-                            <artist id="US11335">
-                                <composer/>
-                                <name>Nike Dimt</name>
-                            </artist>
-                            <artist id="US11336">
-                                <composer/>
-                                <name>Tre Cool</name>
-                            </artist>
-                        </artists>
-                        <year>
-                            2008
-                        </year>
-                    </album>
-                    <duration>
-                        3:12
-                    </duration>
-                    <size type="MB">
-                        2,93
-                    </size>
-                    <media_type id="1">
-                        mp3
-                    </media_type>
                 </track>
             </tracks>
         </playlist>
