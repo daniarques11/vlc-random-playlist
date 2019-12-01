@@ -5,7 +5,7 @@ from logica import *
 
 def main():
     vlcRuta = '"C:\\Program Files (x86)\\VideoLAN\\VLC\\vlc.exe"'
-    libreria = "libraryDefinitivo.xml"
+    libreria = "library.xml"
     diccionarioRutas = getDiccionarioRutas(libreria)
     listaRandom = getCancionesRandom(diccionarioRutas)
     ejecutarVLC(vlcRuta, listaRandom)
