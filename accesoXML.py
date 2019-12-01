@@ -19,9 +19,5 @@ def getDiccionarioRutas(libreriaXML):
             for tracks in libreriaXML:
                 for track in tracks.findall("track"):
                     cancionesDict[track.attrib['ruta']] = track.attrib['id']
-
-        if len(cancionesDict) > 25:
-            return cancionesDict
-        else:
-            print("La carpeta contiene menos de 25 canciones")
-            exit()
+        print(cancionesDict)
+        return cancionesDict
