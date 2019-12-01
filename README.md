@@ -1,4 +1,4 @@
-![Comisión Europea](/.eu.png)
+![Comisión Europea](eu.png)
 # Proyecto VLC
 ## Daniel Arqués Toro y Daniel Zurita Mena
 ## CFGS DUAL DESARROLLO DE APLICACIONES WEB – CIFP FRANCESC BORJA MOLL
