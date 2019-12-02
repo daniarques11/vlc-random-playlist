@@ -7,7 +7,7 @@ USE VLC;
 CREATE TABLE Artists (
     id VARCHAR(10) NOT NULL,
     name VARCHAR(50) NOT NULL,
-    PRIMARY KEY (id),
+    PRIMARY KEY (id)
 ) engine = InnoDB;
 
 CREATE TABLE Band_Artists (
@@ -157,15 +157,15 @@ values
 insert into
     Media_Types
 values
-    (1, 'mp3'),ç`´
-    (2, 'wma'),ç`´
-    (3, 'wmv'),ç`´
-    (4, 'mp4'),ç`´
-    (5, 'midi');ç`´
-ç`´
-insert intoç`´
-    Genresç`´
-valuesç`´
+    (1, 'mp3'),
+    (2, 'wma'),
+    (3, 'wmv'),
+    (4, 'mp4'),
+    (5, 'midi');
+
+insert into
+    Genres
+values
     (15, 'Indie-pop'),
     (1, 'Rock'),
     (12, 'Pop Rock'),
