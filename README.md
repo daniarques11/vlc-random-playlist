@@ -29,4 +29,4 @@
     * Crear bases de datos definiendo su estructura y las características de sus elementos según el modelo relacional.
     * Diseña modelos relacional normalizados interpretando diagramas Entidad/Relación.
 ### Este repositorio contiene el código, la documentación y los archivos del proyecto.
-***Fecha de entrega: 02-12-1996***
+***Fecha de entrega: 02-12-2019***
